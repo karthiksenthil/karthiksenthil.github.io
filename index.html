@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<!-- <div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
@@ -30,4 +30,12 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div> -->
+
+<h2> All posts </h2>
+{% for post in site.posts %}
+  <a href="{{ post.url }}"><h3>{{ post.title }} </h3> </a>
+  <div>{{ post.content |truncatehtml | truncatewords: 25 }}</div>
+{% endfor %}
+
+

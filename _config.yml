@@ -5,9 +5,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Karthik Senthil
+url:                 https://karthiksenthil.github.io
 paginate:            1
 baseurl:             ""
 
@@ -20,11 +19,20 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Karthik Senthil
+  url:               https://karthiksenthil.github.io
+  email:             karthik.senthil94@gmail.com
+  github:            karthiksenthil
+
+# social icons
+show_social_icons:   true
+github_username:     karthiksenthil
 
 # Custom vars
 version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
+
+pages_list:
+  About:              '/about'
+  Resume:             '/resume.pdf'

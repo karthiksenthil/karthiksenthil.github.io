@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title></title>
+		<description></description>		
+		<link>https://karthiksenthil.github.io</link>
+		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Multrix - A tool for dynamic dependence analysis of a program</title>
+				        
+				
+					<description>&lt;p&gt;&lt;em&gt;A project undertaken in the &lt;a href=&quot;http://hpc.nitk.ac.in/&quot;&gt;HPC Research Group&lt;/a&gt; at National Institute of Technology Karnataka, India&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Multrix is an automatic, dynamic and language-independent tool to construct the Node Dependency Matrix(NDM) of an input program. It uses dynamic binary instrumentation techniques to identify dependencies at instruction level in the input program, and reprsent the same using the NDM.&lt;/p&gt;
+
+&lt;p&gt;The Intel PIN DBI framework was used for instrumentation. Pin provides great flexibility in analysing executables with features to insert stubs or breakpoints in the running program. A custom program written using the Pin API to analyse running programs is a called PinTool.&lt;/p&gt;
+
+&lt;p&gt;Usage and execution cycle in Pin :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Design Pintool to perform required analysis&lt;/li&gt;
+  &lt;li&gt;Compile the Pintool into an &lt;code&gt;so&lt;/code&gt; file(shared object)&lt;/li&gt;
+  &lt;li&gt;Attach the file to the program and execute it&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Work in progress&lt;/em&gt;&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 18 Aug 2015 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2015/08/18/multrix/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2015/08/18/multrix/</guid>
+			</item>
+		
+			<item>
+				<title>What is HPC?</title>
+				        
+				
+					<description>&lt;p&gt;High Performance Computing(HPC) is becoming a trending term in Computer Science. Here is my view or definition of HPC in layman words.&lt;/p&gt;
+
+&lt;p&gt;As humans we are bound by the performance metric in any activity that we pursue, constantly aiming to improve this metric. So it is unsurprising that computing devices these days are also striving to give their best performance.&lt;/p&gt;
+
+&lt;p&gt;In my view, HPC can be defined as any activity that reduces computation time of a process on a computing device and accordingly shows signs of improvement(large or small-scale) in performance. Even the smallest step of reducing unecessary iterations in a for-loop can be a simple step towards high performance computing. A tool which emphasises this : &lt;a href=&quot;http://karthiksenthil.github.io/2015/08/18/multrix/&quot;&gt;Multrix&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So HPC doesn&amp;#8217;t just refer to large scale parallel architectures or huge clusters of CPUs and GPUs with millions of cores. The simple small-scale optimizations that when implemented conserve our computation resources are the activities that define and drive HPC.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 24 Jun 2015 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2015/06/24/whats-hpc/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2015/06/24/whats-hpc/</guid>
+			</item>
+		
+	</channel>
+</rss>

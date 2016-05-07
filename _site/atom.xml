@@ -4,13 +4,37 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-04-26T22:39:22+05:30</updated>
+ <updated>2016-05-08T01:11:38+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Community Bonding - First Post</title>
+   <link href="https://karthiksenthil.github.io/2016/05/07/gsoc16/"/>
+   <updated>2016-05-07T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/05/07/gsoc16</id>
+   <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
+
+&lt;p&gt;This year as part of Google Summer of Code 2016 I will continue working on &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry&quot;&gt;ruby_curry&lt;/a&gt;, extending it to a full fledged compiler implementation for FlatCurry, a flavour of the functional logic programming language &lt;a href=&quot;https://en.wikipedia.org/wiki/Curry_(programming_language)&quot;&gt;Curry&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;More details about the project can be found &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#4517222395412480&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After discussions with my mentor, Prof. Antoy, I have decided to spend the initial part of the Community Bonding period for the following -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt; Status Report - detailed draft of current status of ruby_curry w.r.t. features and bugs &lt;/li&gt;
+&lt;li&gt; Setting up &lt;a href=&quot;https://www.informatik.uni-kiel.de/~pakcs/&quot;&gt;PAKCS&lt;/a&gt; and &lt;a href=&quot;https://www-ps.informatik.uni-kiel.de/kics2/&quot;&gt;KiCS2&lt;/a&gt; on local machine &lt;/li&gt;
+&lt;li&gt; Survey on the above compilers &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Looking forward to learn more :)&lt;/p&gt;
+
+&lt;p&gt;P.S. : And yes, this year I will update about my progress in this project through regular blog posts on my personal website itself.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Multrix - A tool for dynamic dependence analysis of a program</title>

@@ -34,7 +34,10 @@ title: Home
 
 <h2> All posts </h2>
 {% for post in site.posts %}
-  <a href="{{ post.url }}"><h3>{{ post.title }} </h3> </a>
+  <a href="{{ post.url }}">
+    <h3>{{ post.title }} </h3> 
+  </a>
+  <small><time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time></small>
   <div>{{ post.content |truncatehtml | truncatewords: 25 }}</div>
 {% endfor %}
 

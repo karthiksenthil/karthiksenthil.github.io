@@ -10,7 +10,7 @@
 
   <title>
     
-      Multrix - A tool for dynamic dependence analysis of a program &middot; Karthik Senthil
+      [GSoC 2016] Installing PAKCS &middot; Karthik Senthil
     
   </title>
 
@@ -44,23 +44,17 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">Multrix - A tool for dynamic dependence analysis of a program</h1>
-  <time datetime="2015-08-18T00:00:00+05:30" class="post-date">18 Aug 2015</time>
-  <p><em>A project undertaken in the <a href="http://hpc.nitk.ac.in/">HPC Research Group</a> at National Institute of Technology Karnataka, India</em></p>
+  <h1 class="post-title">[GSoC 2016] Installing PAKCS</h1>
+  <time datetime="2016-05-09T00:00:00+05:30" class="post-date">09 May 2016</time>
+  <p>I spent the last few days surfing through the current codebase in ruby_curry in order to identify the code workflow for a single run of the tool.</p>
 
-<p>Multrix is an automatic, dynamic and language-independent tool to construct the Node Dependency Matrix(NDM) of an input program. It uses dynamic binary instrumentation techniques to identify dependencies at instruction level in the input program, and reprsent the same using the NDM.</p>
+<p>I have also started documenting a directory wise description of files for the status report which should be available soon.</p>
 
-<p>The Intel PIN DBI framework was used for instrumentation. Pin provides great flexibility in analysing executables with features to insert stubs or breakpoints in the running program. A custom program written using the Pin API to analyse running programs is a called PinTool.</p>
+<p>With regards to installing PAKCS on my local machine, I followed the instructions provided <a href="https://www.informatik.uni-kiel.de/~pakcs/download.html">here</a>. I already had an updated version of <a href="http://www.swi-prolog.org/">SWI-Prolog</a> and hence went ahead to just download the Linux(64 bit) release of <a href="https://www.informatik.uni-kiel.de/~pakcs/download/pakcs-1.14.1-amd64-Linux.tar.gz">PAKCS v1.14.1</a>. </p>
 
-<p>Usage and execution cycle in Pin :</p>
+<p>The build took quite some time, but towards the end it was a smooth install. I could verify the working with the <a href="http://www-ps.informatik.uni-kiel.de/smap/smap.cgi?download/1/1">Naive Reverse</a> example.</p>
 
-<ol>
-  <li>Design Pintool to perform required analysis</li>
-  <li>Compile the Pintool into an <code>so</code> file(shared object)</li>
-  <li>Attach the file to the program and execute it</li>
-</ol>
-
-<p><em>Work in progress</em></p>
+<p>An interesting feature in PAKCS is the curry2xml tool (using :xml in the REPL). This caught my attention as ruby_curry also aims to convert FlatCurry into JSON(in the frontend) for further processing into Ruby object code. So I’m looking into the working and features of this tool in PAKCS before implementing a similar idea for JSON in ruby_curry.</p>
 
 </article>
 
@@ -71,18 +65,18 @@
     
       <li>
         <h3>
-          <a href="/2016/05/09/gsoc16/">
-            [GSoC 2016] Installing PAKCS
-            <small><time datetime="2016-05-09T00:00:00+05:30">09 May 2016</time></small>
+          <a href="/2016/05/07/gsoc16/">
+            [GSoC 2016] Community Bonding - First Post
+            <small><time datetime="2016-05-07T00:00:00+05:30">07 May 2016</time></small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/2016/05/07/gsoc16/">
-            [GSoC 2016] Community Bonding - First Post
-            <small><time datetime="2016-05-07T00:00:00+05:30">07 May 2016</time></small>
+          <a href="/2015/08/18/multrix/">
+            Multrix - A tool for dynamic dependence analysis of a program
+            <small><time datetime="2015-08-18T00:00:00+05:30">18 Aug 2015</time></small>
           </a>
         </h3>
       </li>

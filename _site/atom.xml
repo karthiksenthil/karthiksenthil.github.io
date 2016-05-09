@@ -4,13 +4,30 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-05-08T01:11:38+05:30</updated>
+ <updated>2016-05-10T00:12:01+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Installing PAKCS</title>
+   <link href="https://karthiksenthil.github.io/2016/05/09/gsoc16/"/>
+   <updated>2016-05-09T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/05/09/gsoc16</id>
+   <content type="html">&lt;p&gt;I spent the last few days surfing through the current codebase in ruby_curry in order to identify the code workflow for a single run of the tool.&lt;/p&gt;
+
+&lt;p&gt;I have also started documenting a directory wise description of files for the status report which should be available soon.&lt;/p&gt;
+
+&lt;p&gt;With regards to installing PAKCS on my local machine, I followed the instructions provided &lt;a href=&quot;https://www.informatik.uni-kiel.de/~pakcs/download.html&quot;&gt;here&lt;/a&gt;. I already had an updated version of &lt;a href=&quot;http://www.swi-prolog.org/&quot;&gt;SWI-Prolog&lt;/a&gt; and hence went ahead to just download the Linux(64 bit) release of &lt;a href=&quot;https://www.informatik.uni-kiel.de/~pakcs/download/pakcs-1.14.1-amd64-Linux.tar.gz&quot;&gt;PAKCS v1.14.1&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;The build took quite some time, but towards the end it was a smooth install. I could verify the working with the &lt;a href=&quot;http://www-ps.informatik.uni-kiel.de/smap/smap.cgi?download/1/1&quot;&gt;Naive Reverse&lt;/a&gt; example.&lt;/p&gt;
+
+&lt;p&gt;An interesting feature in PAKCS is the curry2xml tool (using :xml in the REPL). This caught my attention as ruby_curry also aims to convert FlatCurry into JSON(in the frontend) for further processing into Ruby object code. So I’m looking into the working and features of this tool in PAKCS before implementing a similar idea for JSON in ruby_curry.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Community Bonding - First Post</title>

@@ -4,13 +4,34 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-05-10T00:12:01+05:30</updated>
+ <updated>2016-05-13T21:08:32+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Codebase status report and installing KiCS2</title>
+   <link href="https://karthiksenthil.github.io/2016/05/13/gsoc16/"/>
+   <updated>2016-05-13T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/05/13/gsoc16</id>
+   <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
+
+&lt;p&gt;This post is to update about my progress in generating a status report for the ruby_curry codebase. I have logically divided the code repo into components and have started documenting the working of each component. The ongoing copy of the report can be viewed &lt;a href=&quot;https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing&quot;&gt;here&lt;/a&gt;. I will continue updating this document over the next week.&lt;/p&gt;
+
+&lt;p&gt;Regarding the installation of &lt;a href=&quot;https://www-ps.informatik.uni-kiel.de/kics2/index.html&quot;&gt;KiCS2&lt;/a&gt;, I carried out the following steps :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt; installing GHC(The Glasgow Haskell Compiler) and Cabal &lt;/li&gt;
+&lt;li&gt; downloading tar of latest release of KiCS2 and building natively &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Intitally the Haskell compiler choked at linking as it by default used the &lt;b&gt;ld.gold&lt;/b&gt; linker. This is a known &lt;a href=&quot;http://stackoverflow.com/questions/13046319/haskell-ghc-compiling-linking-error-not-creating-executable-linux&quot;&gt;issue&lt;/a&gt; which I solved by purging binutils-gold as suggested &lt;a href=&quot;http://stackoverflow.com/a/13046709&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After this step, the KiCS2 build again failed with Cabal failing to install some packages due to unmet dependencies. I am currently working on getting around this issue. The missing dependencies include &lt;i&gt;comonad 5&lt;/i&gt;, &lt;i&gt;semigroupoids-5.0.1&lt;/i&gt; and &lt;i&gt;mtl-2.2.1&lt;/i&gt;. I have tried natively installing these dependencies from source(Github), but the build still seems to fail for same reason. I will try other possible steps to solve this problem and go ahead with exploring the features of KiCS2.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Installing PAKCS</title>

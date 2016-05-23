@@ -47,22 +47,26 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/09/gsoc16/">
-        [GSoC 2016] Installing PAKCS
+      <a href="/2016/05/13/gsoc16/">
+        [GSoC 2016] Codebase status report and installing KiCS2
       </a>
     </h1>
 
-    <time datetime="2016-05-09T00:00:00+05:30" class="post-date">09 May 2016</time>
+    <time datetime="2016-05-13T00:00:00+05:30" class="post-date">13 May 2016</time>
 
-    <p>I spent the last few days surfing through the current codebase in ruby_curry in order to identify the code workflow for a single run of the tool.</p>
+    <p>Hello all!</p>
 
-<p>I have also started documenting a directory wise description of files for the status report which should be available soon.</p>
+<p>This post is to update about my progress in generating a status report for the ruby_curry codebase. I have logically divided the code repo into components and have started documenting the working of each component. The ongoing copy of the report can be viewed <a href="https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing">here</a>. I will continue updating this document over the next week.</p>
 
-<p>With regards to installing PAKCS on my local machine, I followed the instructions provided <a href="https://www.informatik.uni-kiel.de/~pakcs/download.html">here</a>. I already had an updated version of <a href="http://www.swi-prolog.org/">SWI-Prolog</a> and hence went ahead to just download the Linux(64 bit) release of <a href="https://www.informatik.uni-kiel.de/~pakcs/download/pakcs-1.14.1-amd64-Linux.tar.gz">PAKCS v1.14.1</a>. </p>
+<p>Regarding the installation of <a href="https://www-ps.informatik.uni-kiel.de/kics2/index.html">KiCS2</a>, I carried out the following steps :</p>
+<ol>
+<li> installing GHC(The Glasgow Haskell Compiler) and Cabal </li>
+<li> downloading tar of latest release of KiCS2 and building natively </li>
+</ol>
 
-<p>The build took quite some time, but towards the end it was a smooth install. I could verify the working with the <a href="http://www-ps.informatik.uni-kiel.de/smap/smap.cgi?download/1/1">Naive Reverse</a> example.</p>
+<p>Intitally the Haskell compiler choked at linking as it by default used the <b>ld.gold</b> linker. This is a known <a href="http://stackoverflow.com/questions/13046319/haskell-ghc-compiling-linking-error-not-creating-executable-linux">issue</a> which I solved by purging binutils-gold as suggested <a href="http://stackoverflow.com/a/13046709">here</a>.</p>
 
-<p>An interesting feature in PAKCS is the curry2xml tool (using :xml in the REPL). This caught my attention as ruby_curry also aims to convert FlatCurry into JSON(in the frontend) for further processing into Ruby object code. So I’m looking into the working and features of this tool in PAKCS before implementing a similar idea for JSON in ruby_curry.</p>
+<p>After this step, the KiCS2 build again failed with Cabal failing to install some packages due to unmet dependencies. I am currently working on getting around this issue. The missing dependencies include <i>comonad 5</i>, <i>semigroupoids-5.0.1</i> and <i>mtl-2.2.1</i>. I have tried natively installing these dependencies from source(Github), but the build still seems to fail for same reason. I will try other possible steps to solve this problem and go ahead with exploring the features of KiCS2.</p>
 
   </article>
   
@@ -78,6 +82,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/05/23/gsoc16/">
+    <h3>[GSoC 2016] Coding phase - First post </h3> 
+  </a>
+  <small><time datetime="2016-05-23T00:00:00+05:30" class="post-date">23 May 2016</time></small>
+  <div><p>Hello all!</p> <p>As part of the initial stage of the Coding Phase, I had a discussion with my mentor regarding the immediate set of tasks/features...</div>
 
   <a href="/2016/05/18/gsoc16/">
     <h3>[GSoC 2016] Completion of status report </h3> 
@@ -129,7 +139,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-05-18T23:19:24+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-05-24T01:59:34+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

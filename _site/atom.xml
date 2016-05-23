@@ -4,13 +4,33 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-05-18T23:19:24+05:30</updated>
+ <updated>2016-05-24T01:59:34+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Coding phase - First post</title>
+   <link href="https://karthiksenthil.github.io/2016/05/23/gsoc16/"/>
+   <updated>2016-05-23T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/05/23/gsoc16</id>
+   <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
+
+&lt;p&gt;As part of the initial stage of the Coding Phase, I had a discussion with my mentor regarding the immediate set of tasks/features to be implemented for the tool (picking from the points highlighted in the proposal). The following are tasks at hand:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt; &lt;b&gt;translator&lt;/b&gt; - A system to translate Curry into a format that is suitable for ruby_curry compiler. At the moment we aim to directly translating Curry to JSON if possible with definitional tree information. &lt;/li&gt;
+&lt;li&gt; &lt;b&gt;backtracking&lt;/b&gt; - The compiler has a stack based backtracking feature to handle CHOICE in Curry. However this module seems buggy and fails for certain examples.&lt;/li&gt;
+&lt;li&gt; Quality and type system &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In addition, I have also added a new test framework to ruby_curry which will enable to integrate all unit tests. This will be beneficial in continously testing the new changes that are being made to the compiler or other relevant modules of the tool.&lt;/p&gt;
+
+&lt;p&gt;To integrate all tests, I added a &lt;a href=&quot;https://github.com/ruby/rake&quot;&gt;Rake&lt;/a&gt; task for tests. All the current unit tests can be run by the &lt;code&gt;rake test&lt;/code&gt; command in the base directory of ruby_curry. The commit for this change can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/commit/d59d1108c19003efeef8b111794546f40412cab5&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Completion of status report</title>

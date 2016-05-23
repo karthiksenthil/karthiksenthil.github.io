@@ -47,29 +47,22 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/07/gsoc16/">
-        [GSoC 2016] Community Bonding - First Post
+      <a href="/2016/05/09/gsoc16/">
+        [GSoC 2016] Installing PAKCS
       </a>
     </h1>
 
-    <time datetime="2016-05-07T00:00:00+05:30" class="post-date">07 May 2016</time>
+    <time datetime="2016-05-09T00:00:00+05:30" class="post-date">09 May 2016</time>
 
-    <p>Hello all!</p>
+    <p>I spent the last few days surfing through the current codebase in ruby_curry in order to identify the code workflow for a single run of the tool.</p>
 
-<p>This year as part of Google Summer of Code 2016 I will continue working on <a href="https://github.com/karthiksenthil/ruby_curry">ruby_curry</a>, extending it to a full fledged compiler implementation for FlatCurry, a flavour of the functional logic programming language <a href="https://en.wikipedia.org/wiki/Curry_(programming_language)">Curry</a>.</p>
+<p>I have also started documenting a directory wise description of files for the status report which should be available soon.</p>
 
-<p>More details about the project can be found <a href="https://summerofcode.withgoogle.com/projects/#4517222395412480">here</a>.</p>
+<p>With regards to installing PAKCS on my local machine, I followed the instructions provided <a href="https://www.informatik.uni-kiel.de/~pakcs/download.html">here</a>. I already had an updated version of <a href="http://www.swi-prolog.org/">SWI-Prolog</a> and hence went ahead to just download the Linux(64 bit) release of <a href="https://www.informatik.uni-kiel.de/~pakcs/download/pakcs-1.14.1-amd64-Linux.tar.gz">PAKCS v1.14.1</a>. </p>
 
-<p>After discussions with my mentor, Prof. Antoy, I have decided to spend the initial part of the Community Bonding period for the following -</p>
-<ol>
-<li> Status Report - detailed draft of current status of ruby_curry w.r.t. features and bugs </li>
-<li> Setting up <a href="https://www.informatik.uni-kiel.de/~pakcs/">PAKCS</a> and <a href="https://www-ps.informatik.uni-kiel.de/kics2/">KiCS2</a> on local machine </li>
-<li> Survey on the above compilers </li>
-</ol>
+<p>The build took quite some time, but towards the end it was a smooth install. I could verify the working with the <a href="http://www-ps.informatik.uni-kiel.de/smap/smap.cgi?download/1/1">Naive Reverse</a> example.</p>
 
-<p>Looking forward to learn more :)</p>
-
-<p>P.S. : And yes, this year I will update about my progress in this project through regular blog posts on my personal website itself.</p>
+<p>An interesting feature in PAKCS is the curry2xml tool (using :xml in the REPL). This caught my attention as ruby_curry also aims to convert FlatCurry into JSON(in the frontend) for further processing into Ruby object code. So I’m looking into the working and features of this tool in PAKCS before implementing a similar idea for JSON in ruby_curry.</p>
 
   </article>
   
@@ -85,6 +78,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/05/23/gsoc16/">
+    <h3>[GSoC 2016] Coding phase - First post </h3> 
+  </a>
+  <small><time datetime="2016-05-23T00:00:00+05:30" class="post-date">23 May 2016</time></small>
+  <div><p>Hello all!</p> <p>As part of the initial stage of the Coding Phase, I had a discussion with my mentor regarding the immediate set of tasks/features...</div>
 
   <a href="/2016/05/18/gsoc16/">
     <h3>[GSoC 2016] Completion of status report </h3> 
@@ -136,7 +135,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-05-18T23:19:24+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-05-24T01:59:34+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

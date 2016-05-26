@@ -7,6 +7,19 @@
 		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>[GSoC 2016] Backtrack bug solved</title>
+				        
+				
+					<description>&lt;p&gt;This post is to update about the current status of work in ruby_curry as part of GSoC 2016.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 26 May 2016 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2016/05/26/gsoc16/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/26/gsoc16/</guid>
+			</item>
+		
+			<item>
 				<title>[GSoC 2016] Coding phase - First post</title>
 				        
 				

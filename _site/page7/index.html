@@ -47,20 +47,28 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2015/06/24/whats-hpc/">
-        What is HPC?
+      <a href="/2015/08/18/multrix/">
+        Multrix - A tool for dynamic dependence analysis of a program
       </a>
     </h1>
 
-    <time datetime="2015-06-24T00:00:00+05:30" class="post-date">24 Jun 2015</time>
+    <time datetime="2015-08-18T00:00:00+05:30" class="post-date">18 Aug 2015</time>
 
-    <p>High Performance Computing(HPC) is becoming a trending term in Computer Science. Here is my view or definition of HPC in layman words.</p>
+    <p><em>A project undertaken in the <a href="http://hpc.nitk.ac.in/">HPC Research Group</a> at National Institute of Technology Karnataka, India</em></p>
 
-<p>As humans we are bound by the performance metric in any activity that we pursue, constantly aiming to improve this metric. So it is unsurprising that computing devices these days are also striving to give their best performance.</p>
+<p>Multrix is an automatic, dynamic and language-independent tool to construct the Node Dependency Matrix(NDM) of an input program. It uses dynamic binary instrumentation techniques to identify dependencies at instruction level in the input program, and reprsent the same using the NDM.</p>
 
-<p>In my view, HPC can be defined as any activity that reduces computation time of a process on a computing device and accordingly shows signs of improvement(large or small-scale) in performance. Even the smallest step of reducing unecessary iterations in a for-loop can be a simple step towards high performance computing. A tool which emphasises this : <a href="http://karthiksenthil.github.io/2015/08/18/multrix/">Multrix</a>.</p>
+<p>The Intel PIN DBI framework was used for instrumentation. Pin provides great flexibility in analysing executables with features to insert stubs or breakpoints in the running program. A custom program written using the Pin API to analyse running programs is a called PinTool.</p>
 
-<p>So HPC doesn’t just refer to large scale parallel architectures or huge clusters of CPUs and GPUs with millions of cores. The simple small-scale optimizations that when implemented conserve our computation resources are the activities that define and drive HPC.</p>
+<p>Usage and execution cycle in Pin :</p>
+
+<ol>
+  <li>Design Pintool to perform required analysis</li>
+  <li>Compile the Pintool into an <code>so</code> file(shared object)</li>
+  <li>Attach the file to the program and execute it</li>
+</ol>
+
+<p><em>Work in progress</em></p>
 
   </article>
   
@@ -68,7 +76,7 @@
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="/page8">Older</a>
   
   
     <a class="pagination-item newer" href="/page6">Newer</a>
@@ -76,6 +84,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/05/26/gsoc16/">
+    <h3>[GSoC 2016] Backtrack bug solved </h3> 
+  </a>
+  <small><time datetime="2016-05-26T00:00:00+05:30" class="post-date">26 May 2016</time></small>
+  <div><p>This post is to update about the current status of work in ruby_curry as part of GSoC 2016.</p> <p>As mentioned in my previous post, I...</div>
 
   <a href="/2016/05/23/gsoc16/">
     <h3>[GSoC 2016] Coding phase - First post </h3> 
@@ -133,7 +147,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-05-24T01:59:34+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-05-27T00:48:17+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

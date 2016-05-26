@@ -10,7 +10,7 @@
 
   <title>
     
-      Multrix - A tool for dynamic dependence analysis of a program &middot; Karthik Senthil
+      [GSoC 2016] Backtrack bug solved &middot; Karthik Senthil
     
   </title>
 
@@ -44,23 +44,21 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">Multrix - A tool for dynamic dependence analysis of a program</h1>
-  <time datetime="2015-08-18T00:00:00+05:30" class="post-date">18 Aug 2015</time>
-  <p><em>A project undertaken in the <a href="http://hpc.nitk.ac.in/">HPC Research Group</a> at National Institute of Technology Karnataka, India</em></p>
+  <h1 class="post-title">[GSoC 2016] Backtrack bug solved</h1>
+  <time datetime="2016-05-26T00:00:00+05:30" class="post-date">26 May 2016</time>
+  <p>This post is to update about the current status of work in ruby_curry as part of GSoC 2016.</p>
 
-<p>Multrix is an automatic, dynamic and language-independent tool to construct the Node Dependency Matrix(NDM) of an input program. It uses dynamic binary instrumentation techniques to identify dependencies at instruction level in the input program, and reprsent the same using the NDM.</p>
+<p>As mentioned in my previous post, I spent the last few days looking into options for the “translator” system and fixing the “backtracking” feature.</p>
 
-<p>The Intel PIN DBI framework was used for instrumentation. Pin provides great flexibility in analysing executables with features to insert stubs or breakpoints in the running program. A custom program written using the Pin API to analyse running programs is a called PinTool.</p>
+<p>With respect to the solving the “backtrack” bug, I had to initially provide support for <code>CHOICE</code> in the frontend of ruby_curry. There were some issues regarding deep cloning(using <code>Marshal.dump</code>) while implementing this, which in fact taught me more about simpleton objects in Ruby. After adding support, I decided to test it with a slightly complex <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/user/permute.json"> permute </a> example. The parsing passed but the output produced by the object code was incorrect due to the backtrack bug.</p>
 
-<p>Usage and execution cycle in Pin :</p>
+<p>To solve the bug, I wrote down a simpler <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/user/simple_choice.json"> simple_choice </a> example. And by using the stack trace and logging features I identified the problem to lie in assigning an unnecessary global variable :P</p>
 
-<ol>
-  <li>Design Pintool to perform required analysis</li>
-  <li>Compile the Pintool into an <code>so</code> file(shared object)</li>
-  <li>Attach the file to the program and execute it</li>
-</ol>
+<p>That solved the problem and I added a corresponding <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/test/test_simple_choice.rb"> test case </a> for future reference.</p>
 
-<p><em>Work in progress</em></p>
+<p>Regarding implementation of the “translator” system, I am speculating into using an existing library. More details about this will be updated after discussions with my mentor.</p>
+
+<p>Up next should be new features for ruby_curry like support for <code>where</code>, <code>loop</code> and <code>case</code> clauses, and probably an efficient type system for the compiler.</p>
 
 </article>
 
@@ -68,15 +66,6 @@
 <aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/05/26/gsoc16/">
-            [GSoC 2016] Backtrack bug solved
-            <small><time datetime="2016-05-26T00:00:00+05:30">26 May 2016</time></small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -92,6 +81,15 @@
           <a href="/2016/05/18/gsoc16/">
             [GSoC 2016] Completion of status report
             <small><time datetime="2016-05-18T00:00:00+05:30">18 May 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/05/13/gsoc16/">
+            [GSoC 2016] Codebase status report and installing KiCS2
+            <small><time datetime="2016-05-13T00:00:00+05:30">13 May 2016</time></small>
           </a>
         </h3>
       </li>

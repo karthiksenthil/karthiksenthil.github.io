@@ -4,13 +4,28 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-05-27T00:48:17+05:30</updated>
+ <updated>2016-05-30T00:49:20+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Translator system for ruby_curry</title>
+   <link href="https://karthiksenthil.github.io/2016/05/29/gsoc16/"/>
+   <updated>2016-05-29T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/05/29/gsoc16</id>
+   <content type="html">&lt;p&gt;I had a discussion with my mentor regarding a translator system which would handle the frontend parsing of Curry source program into an intermediate form suitable for the ruby_curry compiler. We concluded that it would be a better option to use an already implemented library for this task, called &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.txt&quot;&gt;ICurry&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This library translates Curry source program into an internal representation. The ICurry representation contains the operation rules in the format of nodes of a graph. From initial reviews it looks like there is more than sufficient information available in this graph for ruby_curry.&lt;/p&gt;
+
+&lt;p&gt;The current idea is to use this graph data structure to construct the Rule objects. These objects can then be compiled into the ruby object code by building corresponding definitional trees. I will be spending the next few days working on this module for ruby_curry.&lt;/p&gt;
+
+&lt;p&gt;Apart from this I added a &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/TODO&quot;&gt;TODO&lt;/a&gt; list to keep track of pending issues/features in the current state of the tool.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Backtrack bug solved</title>

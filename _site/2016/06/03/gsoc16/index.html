@@ -10,7 +10,7 @@
 
   <title>
     
-      [GSoC 2016] Completion of status report &middot; Karthik Senthil
+      [GSoC 2016] Progress on translator system &middot; Karthik Senthil
     
   </title>
 
@@ -44,20 +44,33 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">[GSoC 2016] Completion of status report</h1>
-  <time datetime="2016-05-18T00:00:00+05:30" class="post-date">18 May 2016</time>
-  <p>I have completed the brief status <a href="https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing">report</a> of the current ruby_curry codebase. The report is organised into 3 main sections -</p>
-<ol>
-<li> Installation/Usage instructions </li>
-<li> Code Workflow </li>
-<li> Directory-wise file descriptions </li>
-</ol>
+  <h1 class="post-title">[GSoC 2016] Progress on translator system</h1>
+  <time datetime="2016-06-03T00:00:00+05:30" class="post-date">03 Jun 2016</time>
+  <p>Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -</p>
 
-<p>The primary purpose of the report is to document the current work so as to comprehensively evaluate the tool from scratch. The evaluation will aid in planning the first set of steps to be undertaken in the upcoming “Coding Phase” of GSoC. The document will also aid the users interested in using the current version of ruby_curry.</p>
+<pre><code>
+mynot.curry
 
-<p>Please leave your comments/suggestions in the report :)</p>
+data myBool = myTrue | myFalse
 
-<p>Looking forward to start the Coding Phase !</p>
+myNot myTrue = myFalse
+myNot myFalse = myTrue
+
+main = myNot (myNot myTrue)
+</code></pre>
+
+<p>The curry program for the translator can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">here</a>.</p>
+
+<p>Currently this program is not executable with the support available in the Github repository of ruby_curry. My mentor and myself have set up a temporary try server and repo to test development stubs since the ICurry library is itself big and difficult to set up.</p>
+
+<p>There is a slight re-architecture in the flow diagram of ruby_curry :-</p>
+
+<p>Curry source program —&gt; ICurry library —&gt; .icur representation —&gt; Ruby executable object code</p>
+
+<p>i.e we have moved the compilation computations to ICurry and implemented the complete runtime environment in ruby. This is to ensure better scaling and ability to handle larger Curry programs, which could not be achieved in a ruby based compiler.</p>
+
+<p>There might be further changes to better this current architecture. I will post about the same when complete :)</p>
+
 
 </article>
 
@@ -65,15 +78,6 @@
 <aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/06/03/gsoc16/">
-            [GSoC 2016] Progress on translator system
-            <small><time datetime="2016-06-03T00:00:00+05:30">03 Jun 2016</time></small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -89,6 +93,15 @@
           <a href="/2016/05/26/gsoc16/">
             [GSoC 2016] Backtrack bug solved
             <small><time datetime="2016-05-26T00:00:00+05:30">26 May 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/05/23/gsoc16/">
+            [GSoC 2016] Coding phase - First post
+            <small><time datetime="2016-05-23T00:00:00+05:30">23 May 2016</time></small>
           </a>
         </h3>
       </li>

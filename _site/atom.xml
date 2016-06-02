@@ -4,13 +4,46 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-05-30T00:49:20+05:30</updated>
+ <updated>2016-06-03T01:28:51+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Progress on translator system</title>
+   <link href="https://karthiksenthil.github.io/2016/06/03/gsoc16/"/>
+   <updated>2016-06-03T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/06/03/gsoc16</id>
+   <content type="html">&lt;p&gt;Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+mynot.curry
+
+data myBool = myTrue | myFalse
+
+myNot myTrue = myFalse
+myNot myFalse = myTrue
+
+main = myNot (myNot myTrue)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The curry program for the translator can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Currently this program is not executable with the support available in the Github repository of ruby_curry. My mentor and myself have set up a temporary try server and repo to test development stubs since the ICurry library is itself big and difficult to set up.&lt;/p&gt;
+
+&lt;p&gt;There is a slight re-architecture in the flow diagram of ruby_curry :-&lt;/p&gt;
+
+&lt;p&gt;Curry source program —&amp;gt; ICurry library —&amp;gt; .icur representation —&amp;gt; Ruby executable object code&lt;/p&gt;
+
+&lt;p&gt;i.e we have moved the compilation computations to ICurry and implemented the complete runtime environment in ruby. This is to ensure better scaling and ability to handle larger Curry programs, which could not be achieved in a ruby based compiler.&lt;/p&gt;
+
+&lt;p&gt;There might be further changes to better this current architecture. I will post about the same when complete :)&lt;/p&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Translator system for ruby_curry</title>

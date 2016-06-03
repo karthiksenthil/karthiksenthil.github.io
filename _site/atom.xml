@@ -4,7 +4,7 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-06-03T01:28:51+05:30</updated>
+ <updated>2016-06-03T15:15:04+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>[GSoC 2016] Progress on translator system</title>
-   <link href="https://karthiksenthil.github.io/2016/06/03/gsoc16/"/>
-   <updated>2016-06-03T00:00:00+05:30</updated>
-   <id>https://karthiksenthil.github.io/2016/06/03/gsoc16</id>
+   <link href="https://karthiksenthil.github.io/2016/06/02/gsoc16/"/>
+   <updated>2016-06-02T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/06/02/gsoc16</id>
    <content type="html">&lt;p&gt;Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;

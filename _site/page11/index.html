@@ -47,26 +47,20 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/26/gsoc16/">
-        [GSoC 2016] Backtrack bug solved
+      <a href="/2015/06/24/whats-hpc/">
+        What is HPC?
       </a>
     </h1>
 
-    <time datetime="2016-05-26T00:00:00+05:30" class="post-date">26 May 2016</time>
+    <time datetime="2015-06-24T00:00:00+05:30" class="post-date">24 Jun 2015</time>
 
-    <p>This post is to update about the current status of work in ruby_curry as part of GSoC 2016.</p>
+    <p>High Performance Computing(HPC) is becoming a trending term in Computer Science. Here is my view or definition of HPC in layman words.</p>
 
-<p>As mentioned in my previous post, I spent the last few days looking into options for the “translator” system and fixing the “backtracking” feature.</p>
+<p>As humans we are bound by the performance metric in any activity that we pursue, constantly aiming to improve this metric. So it is unsurprising that computing devices these days are also striving to give their best performance.</p>
 
-<p>With respect to the solving the “backtrack” bug, I had to initially provide support for <code>CHOICE</code> in the frontend of ruby_curry. There were some issues regarding deep cloning(using <code>Marshal.dump</code>) while implementing this, which in fact taught me more about simpleton objects in Ruby. After adding support, I decided to test it with a slightly complex <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/user/permute.json"> permute </a> example. The parsing passed but the output produced by the object code was incorrect due to the backtrack bug.</p>
+<p>In my view, HPC can be defined as any activity that reduces computation time of a process on a computing device and accordingly shows signs of improvement(large or small-scale) in performance. Even the smallest step of reducing unecessary iterations in a for-loop can be a simple step towards high performance computing. A tool which emphasises this : <a href="http://karthiksenthil.github.io/2015/08/18/multrix/">Multrix</a>.</p>
 
-<p>To solve the bug, I wrote down a simpler <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/user/simple_choice.json"> simple_choice </a> example. And by using the stack trace and logging features I identified the problem to lie in assigning an unnecessary global variable :P</p>
-
-<p>That solved the problem and I added a corresponding <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/test/test_simple_choice.rb"> test case </a> for future reference.</p>
-
-<p>Regarding implementation of the “translator” system, I am speculating into using an existing library. More details about this will be updated after discussions with my mentor.</p>
-
-<p>Up next should be new features for ruby_curry like support for <code>where</code>, <code>loop</code> and <code>case</code> clauses, and probably an efficient type system for the compiler.</p>
+<p>So HPC doesn’t just refer to large scale parallel architectures or huge clusters of CPUs and GPUs with millions of cores. The simple small-scale optimizations that when implemented conserve our computation resources are the activities that define and drive HPC.</p>
 
   </article>
   
@@ -74,10 +68,10 @@
 
 <div class="pagination">
   
-    <a class="pagination-item older" href="/page5">Older</a>
+    <span class="pagination-item older">Older</span>
   
   
-    <a class="pagination-item newer" href="/page3">Newer</a>
+    <a class="pagination-item newer" href="/page10">Newer</a>
   
 </div> -->
 

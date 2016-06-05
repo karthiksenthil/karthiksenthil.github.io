@@ -4,13 +4,30 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-06-03T15:15:04+05:30</updated>
+ <updated>2016-06-06T01:42:58+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Introducing RCurry - An abstraction layer</title>
+   <link href="https://karthiksenthil.github.io/2016/06/05/gsoc16/"/>
+   <updated>2016-06-05T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/06/05/gsoc16</id>
+   <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
+
+&lt;p&gt;As discussed in the previous post, we made a drastic change in the architecture of ruby_curry by utilising &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.pdf&quot;&gt;ICurry&lt;/a&gt; to cover the compilation steps while providing a robust runtime environment in ruby.&lt;/p&gt;
+
+&lt;p&gt;My mentor and I had discussions about how cumbersome the task of directly converting &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry&quot;&gt;ICurry to Ruby&lt;/a&gt; was. The feature set was limited and needed extra programming just to obtain some information for the Ruby object code. As a suggestion to solve this, we decided to introduce a layer of abstraction over ICurry - called RCurry. RCurry will be a code level abstraction of the information in ICurry i.e. in order to convert ICurry into executable code we add an abstract layer which can then be converted to object code in any language.&lt;/p&gt;
+
+&lt;p&gt;This would make the generation of object highly language independent. All one has to do is create a runtime environment for execution and develop a pretty printer(or converter) for translating RCurry into language of their choice. This logical partition also makes maintenance and development easy.&lt;/p&gt;
+
+&lt;p&gt;On these lines, I have been working on defining RCurry and a module to convert ICurry to RCurry called ICurryToAbstractRuby. These modules are currently a stub under development and being tested on the try server. I plan on making it available on the Github repo by the end of next week, along with a couple of tasks implemented from the TODO list … So stay tuned :)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Progress on translator system</title>

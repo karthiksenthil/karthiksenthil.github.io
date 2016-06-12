@@ -47,26 +47,20 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/26/gsoc16/">
-        [GSoC 2016] Backtrack bug solved
+      <a href="/2016/05/29/gsoc16/">
+        [GSoC 2016] Translator system for ruby_curry
       </a>
     </h1>
 
-    <time datetime="2016-05-26T00:00:00+05:30" class="post-date">26 May 2016</time>
+    <time datetime="2016-05-29T00:00:00+05:30" class="post-date">29 May 2016</time>
 
-    <p>This post is to update about the current status of work in ruby_curry as part of GSoC 2016.</p>
+    <p>I had a discussion with my mentor regarding a translator system which would handle the frontend parsing of Curry source program into an intermediate form suitable for the ruby_curry compiler. We concluded that it would be a better option to use an already implemented library for this task, called <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.txt">ICurry</a>.</p>
 
-<p>As mentioned in my previous post, I spent the last few days looking into options for the “translator” system and fixing the “backtracking” feature.</p>
+<p>This library translates Curry source program into an internal representation. The ICurry representation contains the operation rules in the format of nodes of a graph. From initial reviews it looks like there is more than sufficient information available in this graph for ruby_curry.</p>
 
-<p>With respect to the solving the “backtrack” bug, I had to initially provide support for <code>CHOICE</code> in the frontend of ruby_curry. There were some issues regarding deep cloning(using <code>Marshal.dump</code>) while implementing this, which in fact taught me more about simpleton objects in Ruby. After adding support, I decided to test it with a slightly complex <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/user/permute.json"> permute </a> example. The parsing passed but the output produced by the object code was incorrect due to the backtrack bug.</p>
+<p>The current idea is to use this graph data structure to construct the Rule objects. These objects can then be compiled into the ruby object code by building corresponding definitional trees. I will be spending the next few days working on this module for ruby_curry.</p>
 
-<p>To solve the bug, I wrote down a simpler <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/user/simple_choice.json"> simple_choice </a> example. And by using the stack trace and logging features I identified the problem to lie in assigning an unnecessary global variable :P</p>
-
-<p>That solved the problem and I added a corresponding <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/test/test_simple_choice.rb"> test case </a> for future reference.</p>
-
-<p>Regarding implementation of the “translator” system, I am speculating into using an existing library. More details about this will be updated after discussions with my mentor.</p>
-
-<p>Up next should be new features for ruby_curry like support for <code>where</code>, <code>loop</code> and <code>case</code> clauses, and probably an efficient type system for the compiler.</p>
+<p>Apart from this I added a <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/TODO">TODO</a> list to keep track of pending issues/features in the current state of the tool.</p>
 
   </article>
   
@@ -82,6 +76,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/06/12/gsoc16/">
+    <h3>[GSoC 2016] Progress in RCurry </h3> 
+  </a>
+  <small><time datetime="2016-06-12T00:00:00+05:30" class="post-date">12 Jun 2016</time></small>
+  <div><p>Hello all!</p> <p>Over the last week, I progressed in defining RCurry and correspondingly updated ICurryToAbstractRuby(the module to convert ICurry to RCurry). The current implementation can...</div>
 
   <a href="/2016/06/05/gsoc16/">
     <h3>[GSoC 2016] Introducing RCurry - An abstraction layer </h3> 
@@ -163,7 +163,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-06-06T01:42:58+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-06-13T01:16:42+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

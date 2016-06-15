@@ -47,26 +47,25 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/13/gsoc16/">
-        [GSoC 2016] Codebase status report and installing KiCS2
+      <a href="/2016/05/18/gsoc16/">
+        [GSoC 2016] Completion of status report
       </a>
     </h1>
 
-    <time datetime="2016-05-13T00:00:00+05:30" class="post-date">13 May 2016</time>
+    <time datetime="2016-05-18T00:00:00+05:30" class="post-date">18 May 2016</time>
 
-    <p>Hello all!</p>
-
-<p>This post is to update about my progress in generating a status report for the ruby_curry codebase. I have logically divided the code repo into components and have started documenting the working of each component. The ongoing copy of the report can be viewed <a href="https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing">here</a>. I will continue updating this document over the next week.</p>
-
-<p>Regarding the installation of <a href="https://www-ps.informatik.uni-kiel.de/kics2/index.html">KiCS2</a>, I carried out the following steps :</p>
+    <p>I have completed the brief status <a href="https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing">report</a> of the current ruby_curry codebase. The report is organised into 3 main sections -</p>
 <ol>
-<li> installing GHC(The Glasgow Haskell Compiler) and Cabal </li>
-<li> downloading tar of latest release of KiCS2 and building natively </li>
+<li> Installation/Usage instructions </li>
+<li> Code Workflow </li>
+<li> Directory-wise file descriptions </li>
 </ol>
 
-<p>Intitally the Haskell compiler choked at linking as it by default used the <b>ld.gold</b> linker. This is a known <a href="http://stackoverflow.com/questions/13046319/haskell-ghc-compiling-linking-error-not-creating-executable-linux">issue</a> which I solved by purging binutils-gold as suggested <a href="http://stackoverflow.com/a/13046709">here</a>.</p>
+<p>The primary purpose of the report is to document the current work so as to comprehensively evaluate the tool from scratch. The evaluation will aid in planning the first set of steps to be undertaken in the upcoming “Coding Phase” of GSoC. The document will also aid the users interested in using the current version of ruby_curry.</p>
 
-<p>After this step, the KiCS2 build again failed with Cabal failing to install some packages due to unmet dependencies. I am currently working on getting around this issue. The missing dependencies include <i>comonad 5</i>, <i>semigroupoids-5.0.1</i> and <i>mtl-2.2.1</i>. I have tried natively installing these dependencies from source(Github), but the build still seems to fail for same reason. I will try other possible steps to solve this problem and go ahead with exploring the features of KiCS2.</p>
+<p>Please leave your comments/suggestions in the report :)</p>
+
+<p>Looking forward to start the Coding Phase !</p>
 
   </article>
   
@@ -82,6 +81,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/06/15/gsoc16/">
+    <h3>[GSoC 2016] Cleanup and progress for mid evaluations </h3> 
+  </a>
+  <small><time datetime="2016-06-15T00:00:00+05:30" class="post-date">15 Jun 2016</time></small>
+  <div><p>This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.</p> <p>I’ve added the module/namespace...</div>
 
   <a href="/2016/06/12/gsoc16/">
     <h3>[GSoC 2016] Progress in RCurry </h3> 
@@ -169,7 +174,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-06-13T01:16:42+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-06-16T00:18:45+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

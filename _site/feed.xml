@@ -7,6 +7,19 @@
 		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>[GSoC 2016] Cleanup and progress for mid evaluations</title>
+				        
+				
+					<description>&lt;p&gt;This week I&amp;#8217;ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 15 Jun 2016 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2016/06/15/gsoc16/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/06/15/gsoc16/</guid>
+			</item>
+		
+			<item>
 				<title>[GSoC 2016] Progress in RCurry</title>
 				        
 				
@@ -126,19 +139,6 @@
 				<pubDate>Mon, 09 May 2016 00:00:00 +0530</pubDate>
 				<link>https://karthiksenthil.github.io/2016/05/09/gsoc16/</link>
 				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/09/gsoc16/</guid>
-			</item>
-		
-			<item>
-				<title>[GSoC 2016] Community Bonding - First Post</title>
-				        
-				
-					<description>&lt;p&gt;Hello all!&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sat, 07 May 2016 00:00:00 +0530</pubDate>
-				<link>https://karthiksenthil.github.io/2016/05/07/gsoc16/</link>
-				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/07/gsoc16/</guid>
 			</item>
 		
 	</channel>

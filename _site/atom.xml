@@ -4,13 +4,26 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-06-13T01:16:42+05:30</updated>
+ <updated>2016-06-16T00:18:45+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Cleanup and progress for mid evaluations</title>
+   <link href="https://karthiksenthil.github.io/2016/06/15/gsoc16/"/>
+   <updated>2016-06-15T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/06/15/gsoc16</id>
+   <content type="html">&lt;p&gt;This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.&lt;/p&gt;
+
+&lt;p&gt;I’ve added the module/namespace feature in the ruby object code and also provided support for integers in the runtime environment. I also did some code cleanup and removed obsolete code in the old codebase that is used on the try server.&lt;/p&gt;
+
+&lt;p&gt;This weekend I plan on merging the 2 repositories i.e try server codebase and Github repository. This would enable people to use the first minimal version of ruby_curry for their usage. I also plan on revamping the current test suite for the project. The updated list of TODO tasks can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/TODO&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Progress in RCurry</title>

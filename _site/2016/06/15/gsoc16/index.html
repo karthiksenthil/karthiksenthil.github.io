@@ -10,7 +10,7 @@
 
   <title>
     
-      [GSoC 2016] Progress on translator system &middot; Karthik Senthil
+      [GSoC 2016] Cleanup and progress for mid evaluations &middot; Karthik Senthil
     
   </title>
 
@@ -44,33 +44,13 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">[GSoC 2016] Progress on translator system</h1>
-  <time datetime="2016-06-02T00:00:00+05:30" class="post-date">02 Jun 2016</time>
-  <p>Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -</p>
+  <h1 class="post-title">[GSoC 2016] Cleanup and progress for mid evaluations</h1>
+  <time datetime="2016-06-15T00:00:00+05:30" class="post-date">15 Jun 2016</time>
+  <p>This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.</p>
 
-<pre><code>
-mynot.curry
+<p>I’ve added the module/namespace feature in the ruby object code and also provided support for integers in the runtime environment. I also did some code cleanup and removed obsolete code in the old codebase that is used on the try server.</p>
 
-data myBool = myTrue | myFalse
-
-myNot myTrue = myFalse
-myNot myFalse = myTrue
-
-main = myNot (myNot myTrue)
-</code></pre>
-
-<p>The curry program for the translator can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">here</a>.</p>
-
-<p>Currently this program is not executable with the support available in the Github repository of ruby_curry. My mentor and myself have set up a temporary try server and repo to test development stubs since the ICurry library is itself big and difficult to set up.</p>
-
-<p>There is a slight re-architecture in the flow diagram of ruby_curry :-</p>
-
-<p>Curry source program —&gt; ICurry library —&gt; .icur representation —&gt; Ruby executable object code</p>
-
-<p>i.e we have moved the compilation computations to ICurry and implemented the complete runtime environment in ruby. This is to ensure better scaling and ability to handle larger Curry programs, which could not be achieved in a ruby based compiler.</p>
-
-<p>There might be further changes to better this current architecture. I will post about the same when complete :)</p>
-
+<p>This weekend I plan on merging the 2 repositories i.e try server codebase and Github repository. This would enable people to use the first minimal version of ruby_curry for their usage. I also plan on revamping the current test suite for the project. The updated list of TODO tasks can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/TODO">here</a>.</p>
 
 </article>
 
@@ -78,15 +58,6 @@ main = myNot (myNot myTrue)
 <aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/06/15/gsoc16/">
-            [GSoC 2016] Cleanup and progress for mid evaluations
-            <small><time datetime="2016-06-15T00:00:00+05:30">15 Jun 2016</time></small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -102,6 +73,15 @@ main = myNot (myNot myTrue)
           <a href="/2016/06/05/gsoc16/">
             [GSoC 2016] Introducing RCurry - An abstraction layer
             <small><time datetime="2016-06-05T00:00:00+05:30">05 Jun 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/06/02/gsoc16/">
+            [GSoC 2016] Progress on translator system
+            <small><time datetime="2016-06-02T00:00:00+05:30">02 Jun 2016</time></small>
           </a>
         </h3>
       </li>

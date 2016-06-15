@@ -47,18 +47,18 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/12/gsoc16/">
-        [GSoC 2016] Progress in RCurry
+      <a href="/2016/06/15/gsoc16/">
+        [GSoC 2016] Cleanup and progress for mid evaluations
       </a>
     </h1>
 
-    <time datetime="2016-06-12T00:00:00+05:30" class="post-date">12 Jun 2016</time>
+    <time datetime="2016-06-15T00:00:00+05:30" class="post-date">15 Jun 2016</time>
 
-    <p>Hello all!</p>
+    <p>This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.</p>
 
-<p>Over the last week, I progressed in defining RCurry and correspondingly updated ICurryToAbstractRuby(the module to convert ICurry to RCurry). The current implementation can be used to compile and execute simple examples like <code>mynot</code> and <code>myappend</code>. There were many issues regarding lack of information available in ICurry which I tackled after discussions with my mentor. The source for <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/RCurry.curry">RCurry</a> and <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToAbstractRuby.curry">ICurryToAbstractRuby</a> are available on the Github repository. A sample ruby object code produced by this version of the system can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/mynot.rb">here</a>.</p>
+<p>I’ve added the module/namespace feature in the ruby object code and also provided support for integers in the runtime environment. I also did some code cleanup and removed obsolete code in the old codebase that is used on the try server.</p>
 
-<p>This week I plan on completing the full support for converting ICurry to RCurry and also improve the ruby runtime environment with features like Modules and Builtin data types. I also plan on working on a new test suite for ruby_curry by verifying the compilation made using ICurry and RCurry.</p>
+<p>This weekend I plan on merging the 2 repositories i.e try server codebase and Github repository. This would enable people to use the first minimal version of ruby_curry for their usage. I also plan on revamping the current test suite for the project. The updated list of TODO tasks can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/TODO">here</a>.</p>
 
   </article>
   
@@ -74,6 +74,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/06/15/gsoc16/">
+    <h3>[GSoC 2016] Cleanup and progress for mid evaluations </h3> 
+  </a>
+  <small><time datetime="2016-06-15T00:00:00+05:30" class="post-date">15 Jun 2016</time></small>
+  <div><p>This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.</p> <p>I’ve added the module/namespace...</div>
 
   <a href="/2016/06/12/gsoc16/">
     <h3>[GSoC 2016] Progress in RCurry </h3> 
@@ -161,7 +167,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-06-13T01:16:42+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-06-16T00:18:45+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

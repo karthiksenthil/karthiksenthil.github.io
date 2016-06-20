@@ -10,7 +10,7 @@
 
   <title>
     
-      Multrix - A tool for dynamic dependence analysis of a program &middot; Karthik Senthil
+      [GSoC 2016] Merged Github repository with try server codebase &middot; Karthik Senthil
     
   </title>
 
@@ -44,23 +44,17 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">Multrix - A tool for dynamic dependence analysis of a program</h1>
-  <time datetime="2015-08-18T00:00:00+05:30" class="post-date">18 Aug 2015</time>
-  <p><em>A project undertaken in the <a href="http://hpc.nitk.ac.in/">HPC Research Group</a> at National Institute of Technology Karnataka, India</em></p>
+  <h1 class="post-title">[GSoC 2016] Merged Github repository with try server codebase</h1>
+  <time datetime="2016-06-20T00:00:00+05:30" class="post-date">20 Jun 2016</time>
+  <p>Over the last few weeks I have been adding all the development code to the try server codebase for immediate testing and rapid modifications. The tool has now reached a stable state which can be used to compile and execute simple Curry programs, and hence I have merged this development code with the stable Github repository for public viewing and usage.</p>
 
-<p>Multrix is an automatic, dynamic and language-independent tool to construct the Node Dependency Matrix(NDM) of an input program. It uses dynamic binary instrumentation techniques to identify dependencies at instruction level in the input program, and reprsent the same using the NDM.</p>
+<p>The current code can be found on Github <a href="https://github.com/karthiksenthil/ruby_curry">here</a>.</p>
 
-<p>The Intel PIN DBI framework was used for instrumentation. Pin provides great flexibility in analysing executables with features to insert stubs or breakpoints in the running program. A custom program written using the Pin API to analyse running programs is a called PinTool.</p>
+<p>The compilation pipeline details and usage of the tool is explained in the updated <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/README.md">README</a>. There is also a <a href="https://github.com/karthiksenthil/ruby_curry/tree/master/test">test</a> suite to verify the working of the current status of the full system. The tests can be run by <code>rake test</code>.</p>
 
-<p>Usage and execution cycle in Pin :</p>
+<p>ruby_curry can be setup and run by installing either PAKCS or KiCS on local machine. We plan on removing this dependency(by compiling into an executable) in the final release of the tool by the end of this GSoC.</p>
 
-<ol>
-  <li>Design Pintool to perform required analysis</li>
-  <li>Compile the Pintool into an <code>so</code> file(shared object)</li>
-  <li>Attach the file to the program and execute it</li>
-</ol>
-
-<p><em>Work in progress</em></p>
+<p>Looking forward to add complete support and more features into the system in order to flawlessly compile a real world Curry application.</p>
 
 </article>
 
@@ -68,15 +62,6 @@
 <aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/06/20/gsoc16/">
-            [GSoC 2016] Merged Github repository with try server codebase
-            <small><time datetime="2016-06-20T00:00:00+05:30">20 Jun 2016</time></small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -92,6 +77,15 @@
           <a href="/2016/06/12/gsoc16/">
             [GSoC 2016] Progress in RCurry
             <small><time datetime="2016-06-12T00:00:00+05:30">12 Jun 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/06/05/gsoc16/">
+            [GSoC 2016] Introducing RCurry - An abstraction layer
+            <small><time datetime="2016-06-05T00:00:00+05:30">05 Jun 2016</time></small>
           </a>
         </h3>
       </li>

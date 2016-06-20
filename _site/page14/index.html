@@ -47,22 +47,20 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/05/gsoc16/">
-        [GSoC 2016] Introducing RCurry - An abstraction layer
+      <a href="/2015/06/24/whats-hpc/">
+        What is HPC?
       </a>
     </h1>
 
-    <time datetime="2016-06-05T00:00:00+05:30" class="post-date">05 Jun 2016</time>
+    <time datetime="2015-06-24T00:00:00+05:30" class="post-date">24 Jun 2015</time>
 
-    <p>Hello all!</p>
+    <p>High Performance Computing(HPC) is becoming a trending term in Computer Science. Here is my view or definition of HPC in layman words.</p>
 
-<p>As discussed in the previous post, we made a drastic change in the architecture of ruby_curry by utilising <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.pdf">ICurry</a> to cover the compilation steps while providing a robust runtime environment in ruby.</p>
+<p>As humans we are bound by the performance metric in any activity that we pursue, constantly aiming to improve this metric. So it is unsurprising that computing devices these days are also striving to give their best performance.</p>
 
-<p>My mentor and I had discussions about how cumbersome the task of directly converting <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">ICurry to Ruby</a> was. The feature set was limited and needed extra programming just to obtain some information for the Ruby object code. As a suggestion to solve this, we decided to introduce a layer of abstraction over ICurry - called RCurry. RCurry will be a code level abstraction of the information in ICurry i.e. in order to convert ICurry into executable code we add an abstract layer which can then be converted to object code in any language.</p>
+<p>In my view, HPC can be defined as any activity that reduces computation time of a process on a computing device and accordingly shows signs of improvement(large or small-scale) in performance. Even the smallest step of reducing unecessary iterations in a for-loop can be a simple step towards high performance computing. A tool which emphasises this : <a href="http://karthiksenthil.github.io/2015/08/18/multrix/">Multrix</a>.</p>
 
-<p>This would make the generation of object highly language independent. All one has to do is create a runtime environment for execution and develop a pretty printer(or converter) for translating RCurry into language of their choice. This logical partition also makes maintenance and development easy.</p>
-
-<p>On these lines, I have been working on defining RCurry and a module to convert ICurry to RCurry called ICurryToAbstractRuby. These modules are currently a stub under development and being tested on the try server. I plan on making it available on the Github repo by the end of next week, along with a couple of tasks implemented from the TODO list … So stay tuned :)</p>
+<p>So HPC doesn’t just refer to large scale parallel architectures or huge clusters of CPUs and GPUs with millions of cores. The simple small-scale optimizations that when implemented conserve our computation resources are the activities that define and drive HPC.</p>
 
   </article>
   
@@ -70,10 +68,10 @@
 
 <div class="pagination">
   
-    <a class="pagination-item older" href="/page5">Older</a>
+    <span class="pagination-item older">Older</span>
   
   
-    <a class="pagination-item newer" href="/page3">Newer</a>
+    <a class="pagination-item newer" href="/page13">Newer</a>
   
 </div> -->
 

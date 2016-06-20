@@ -4,13 +4,30 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-06-16T00:18:45+05:30</updated>
+ <updated>2016-06-20T23:08:27+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Merged Github repository with try server codebase</title>
+   <link href="https://karthiksenthil.github.io/2016/06/20/gsoc16/"/>
+   <updated>2016-06-20T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/06/20/gsoc16</id>
+   <content type="html">&lt;p&gt;Over the last few weeks I have been adding all the development code to the try server codebase for immediate testing and rapid modifications. The tool has now reached a stable state which can be used to compile and execute simple Curry programs, and hence I have merged this development code with the stable Github repository for public viewing and usage.&lt;/p&gt;
+
+&lt;p&gt;The current code can be found on Github &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The compilation pipeline details and usage of the tool is explained in the updated &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/README.md&quot;&gt;README&lt;/a&gt;. There is also a &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/tree/master/test&quot;&gt;test&lt;/a&gt; suite to verify the working of the current status of the full system. The tests can be run by &lt;code&gt;rake test&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;ruby_curry can be setup and run by installing either PAKCS or KiCS on local machine. We plan on removing this dependency(by compiling into an executable) in the final release of the tool by the end of this GSoC.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to add complete support and more features into the system in order to flawlessly compile a real world Curry application.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Cleanup and progress for mid evaluations</title>

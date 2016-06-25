@@ -7,6 +7,19 @@
 		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>[GSoC 2016] Progress on External runtime functions</title>
+				        
+				
+					<description>&lt;p&gt;After the codebase merge a lot of new tasks and issues turned up. One of the important tasks is adding runtime support for externally defined functions in &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/Prelude.rb&quot;&gt;Prelude&lt;/a&gt;. I have made a complete &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/DOUBTS&quot;&gt;list&lt;/a&gt; of unimplemented External functions and their priorities. Current status of this module can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 25 Jun 2016 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2016/06/25/gsoc16/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/06/25/gsoc16/</guid>
+			</item>
+		
+			<item>
 				<title>[GSoC 2016] Merged Github repository with try server codebase</title>
 				        
 				
@@ -126,19 +139,6 @@
 				<pubDate>Wed, 18 May 2016 00:00:00 +0530</pubDate>
 				<link>https://karthiksenthil.github.io/2016/05/18/gsoc16/</link>
 				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/18/gsoc16/</guid>
-			</item>
-		
-			<item>
-				<title>[GSoC 2016] Codebase status report and installing KiCS2</title>
-				        
-				
-					<description>&lt;p&gt;Hello all!&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Fri, 13 May 2016 00:00:00 +0530</pubDate>
-				<link>https://karthiksenthil.github.io/2016/05/13/gsoc16/</link>
-				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/13/gsoc16/</guid>
 			</item>
 		
 	</channel>

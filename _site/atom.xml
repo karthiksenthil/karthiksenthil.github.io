@@ -4,13 +4,28 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-06-20T23:08:27+05:30</updated>
+ <updated>2016-06-26T00:39:45+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Progress on External runtime functions</title>
+   <link href="https://karthiksenthil.github.io/2016/06/25/gsoc16/"/>
+   <updated>2016-06-25T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/06/25/gsoc16</id>
+   <content type="html">&lt;p&gt;After the codebase merge a lot of new tasks and issues turned up. One of the important tasks is adding runtime support for externally defined functions in &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/Prelude.rb&quot;&gt;Prelude&lt;/a&gt;. I have made a complete &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/DOUBTS&quot;&gt;list&lt;/a&gt; of unimplemented External functions and their priorities. Current status of this module can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before this task I also worked on making a more robust &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/test/test_positives.rb&quot;&gt;test suite&lt;/a&gt; in ruby. All tests can be run using the &lt;code&gt;rake test&lt;/code&gt; command and in order to force recompile all intermediate files from scratch for testing, the command &lt;code&gt;rake ftest&lt;/code&gt; can be used.&lt;/p&gt;
+
+&lt;p&gt;I am currently working of refactoring &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/expressions.rb&quot;&gt;expressions.rb&lt;/a&gt; to facilitate the definition of some External functions.&lt;/p&gt;
+
+&lt;p&gt;The complete list of upcoming tasks can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/TODO&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Merged Github repository with try server codebase</title>

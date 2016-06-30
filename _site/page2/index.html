@@ -47,22 +47,20 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/20/gsoc16/">
-        [GSoC 2016] Merged Github repository with try server codebase
+      <a href="/2016/06/25/gsoc16/">
+        [GSoC 2016] Progress on External runtime functions
       </a>
     </h1>
 
-    <time datetime="2016-06-20T00:00:00+05:30" class="post-date">20 Jun 2016</time>
+    <time datetime="2016-06-25T00:00:00+05:30" class="post-date">25 Jun 2016</time>
 
-    <p>Over the last few weeks I have been adding all the development code to the try server codebase for immediate testing and rapid modifications. The tool has now reached a stable state which can be used to compile and execute simple Curry programs, and hence I have merged this development code with the stable Github repository for public viewing and usage.</p>
+    <p>After the codebase merge a lot of new tasks and issues turned up. One of the important tasks is adding runtime support for externally defined functions in <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/Prelude.rb">Prelude</a>. I have made a complete <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/DOUBTS">list</a> of unimplemented External functions and their priorities. Current status of this module can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb">here</a>.</p>
 
-<p>The current code can be found on Github <a href="https://github.com/karthiksenthil/ruby_curry">here</a>.</p>
+<p>Before this task I also worked on making a more robust <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/test/test_positives.rb">test suite</a> in ruby. All tests can be run using the <code>rake test</code> command and in order to force recompile all intermediate files from scratch for testing, the command <code>rake ftest</code> can be used.</p>
 
-<p>The compilation pipeline details and usage of the tool is explained in the updated <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/README.md">README</a>. There is also a <a href="https://github.com/karthiksenthil/ruby_curry/tree/master/test">test</a> suite to verify the working of the current status of the full system. The tests can be run by <code>rake test</code>.</p>
+<p>I am currently working of refactoring <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/expressions.rb">expressions.rb</a> to facilitate the definition of some External functions.</p>
 
-<p>ruby_curry can be setup and run by installing either PAKCS or KiCS on local machine. We plan on removing this dependency(by compiling into an executable) in the final release of the tool by the end of this GSoC.</p>
-
-<p>Looking forward to add complete support and more features into the system in order to flawlessly compile a real world Curry application.</p>
+<p>The complete list of upcoming tasks can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/TODO">here</a>.</p>
 
   </article>
   
@@ -78,6 +76,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/06/30/gsoc16/">
+    <h3>[GSoC 2016] Refactoring of expressions </h3> 
+  </a>
+  <small><time datetime="2016-06-30T00:00:00+05:30" class="post-date">30 Jun 2016</time></small>
+  <div><p>Hello all!</p> <p>I spent the last few days working on refactoring the old expressions.rb (in ruby runtime environment) into a revamped <code>CT_Expressions</code> module. This solves...</div>
 
   <a href="/2016/06/25/gsoc16/">
     <h3>[GSoC 2016] Progress on External runtime functions </h3> 
@@ -183,7 +187,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-06-26T00:39:45+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-06-30T15:43:10+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

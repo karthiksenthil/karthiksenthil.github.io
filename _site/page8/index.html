@@ -47,20 +47,38 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/29/gsoc16/">
-        [GSoC 2016] Translator system for ruby_curry
+      <a href="/2016/06/02/gsoc16/">
+        [GSoC 2016] Progress on translator system
       </a>
     </h1>
 
-    <time datetime="2016-05-29T00:00:00+05:30" class="post-date">29 May 2016</time>
+    <time datetime="2016-06-02T00:00:00+05:30" class="post-date">02 Jun 2016</time>
 
-    <p>I had a discussion with my mentor regarding a translator system which would handle the frontend parsing of Curry source program into an intermediate form suitable for the ruby_curry compiler. We concluded that it would be a better option to use an already implemented library for this task, called <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.txt">ICurry</a>.</p>
+    <p>Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -</p>
 
-<p>This library translates Curry source program into an internal representation. The ICurry representation contains the operation rules in the format of nodes of a graph. From initial reviews it looks like there is more than sufficient information available in this graph for ruby_curry.</p>
+<pre><code>
+mynot.curry
 
-<p>The current idea is to use this graph data structure to construct the Rule objects. These objects can then be compiled into the ruby object code by building corresponding definitional trees. I will be spending the next few days working on this module for ruby_curry.</p>
+data myBool = myTrue | myFalse
 
-<p>Apart from this I added a <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/TODO">TODO</a> list to keep track of pending issues/features in the current state of the tool.</p>
+myNot myTrue = myFalse
+myNot myFalse = myTrue
+
+main = myNot (myNot myTrue)
+</code></pre>
+
+<p>The curry program for the translator can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">here</a>.</p>
+
+<p>Currently this program is not executable with the support available in the Github repository of ruby_curry. My mentor and myself have set up a temporary try server and repo to test development stubs since the ICurry library is itself big and difficult to set up.</p>
+
+<p>There is a slight re-architecture in the flow diagram of ruby_curry :-</p>
+
+<p>Curry source program —&gt; ICurry library —&gt; .icur representation —&gt; Ruby executable object code</p>
+
+<p>i.e we have moved the compilation computations to ICurry and implemented the complete runtime environment in ruby. This is to ensure better scaling and ability to handle larger Curry programs, which could not be achieved in a ruby based compiler.</p>
+
+<p>There might be further changes to better this current architecture. I will post about the same when complete :)</p>
+
 
   </article>
   
@@ -76,6 +94,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/05/gsoc16/">
+    <h3>[GSoC 2016] Refactoring symbols and implementing External functions </h3> 
+  </a>
+  <small><time datetime="2016-07-05T00:00:00+05:30" class="post-date">05 Jul 2016</time></small>
+  <div><p>The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb">CT_Symbols</a>. This involved a lot...</div>
 
   <a href="/2016/06/30/gsoc16/">
     <h3>[GSoC 2016] Refactoring of expressions </h3> 
@@ -187,7 +211,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-06-30T15:43:10+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-06T01:20:31+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

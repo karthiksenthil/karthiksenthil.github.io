@@ -47,18 +47,22 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/15/gsoc16/">
-        [GSoC 2016] Cleanup and progress for mid evaluations
+      <a href="/2016/06/20/gsoc16/">
+        [GSoC 2016] Merged Github repository with try server codebase
       </a>
     </h1>
 
-    <time datetime="2016-06-15T00:00:00+05:30" class="post-date">15 Jun 2016</time>
+    <time datetime="2016-06-20T00:00:00+05:30" class="post-date">20 Jun 2016</time>
 
-    <p>This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.</p>
+    <p>Over the last few weeks I have been adding all the development code to the try server codebase for immediate testing and rapid modifications. The tool has now reached a stable state which can be used to compile and execute simple Curry programs, and hence I have merged this development code with the stable Github repository for public viewing and usage.</p>
 
-<p>I’ve added the module/namespace feature in the ruby object code and also provided support for integers in the runtime environment. I also did some code cleanup and removed obsolete code in the old codebase that is used on the try server.</p>
+<p>The current code can be found on Github <a href="https://github.com/karthiksenthil/ruby_curry">here</a>.</p>
 
-<p>This weekend I plan on merging the 2 repositories i.e try server codebase and Github repository. This would enable people to use the first minimal version of ruby_curry for their usage. I also plan on revamping the current test suite for the project. The updated list of TODO tasks can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/TODO">here</a>.</p>
+<p>The compilation pipeline details and usage of the tool is explained in the updated <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/README.md">README</a>. There is also a <a href="https://github.com/karthiksenthil/ruby_curry/tree/master/test">test</a> suite to verify the working of the current status of the full system. The tests can be run by <code>rake test</code>.</p>
+
+<p>ruby_curry can be setup and run by installing either PAKCS or KiCS on local machine. We plan on removing this dependency(by compiling into an executable) in the final release of the tool by the end of this GSoC.</p>
+
+<p>Looking forward to add complete support and more features into the system in order to flawlessly compile a real world Curry application.</p>
 
   </article>
   
@@ -74,6 +78,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/05/gsoc16/">
+    <h3>[GSoC 2016] Refactoring symbols and implementing External functions </h3> 
+  </a>
+  <small><time datetime="2016-07-05T00:00:00+05:30" class="post-date">05 Jul 2016</time></small>
+  <div><p>The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb">CT_Symbols</a>. This involved a lot...</div>
 
   <a href="/2016/06/30/gsoc16/">
     <h3>[GSoC 2016] Refactoring of expressions </h3> 
@@ -185,7 +195,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-06-30T15:43:10+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-06T01:20:31+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

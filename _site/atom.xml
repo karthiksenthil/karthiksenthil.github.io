@@ -4,13 +4,26 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-06-30T15:43:10+05:30</updated>
+ <updated>2016-07-06T01:20:31+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Refactoring symbols and implementing External functions</title>
+   <link href="https://karthiksenthil.github.io/2016/07/05/gsoc16/"/>
+   <updated>2016-07-05T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/07/05/gsoc16</id>
+   <content type="html">&lt;p&gt;The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb&quot;&gt;CT_Symbols&lt;/a&gt;. This involved a lot of changes to the structure of object code but in the end the module is very concise and accurate. We also tested all the existing test cases against the new module.&lt;/p&gt;
+
+&lt;p&gt;After that I implemented the &lt;code&gt;compare&lt;/code&gt; External function as per the algorithm. Initially the comparison was done based on alphabetical ordering of symbol names for data constructors, but this was a mistake and was later corrected to comparison of token value instead. I also added a corresponding &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/curry_examples/compare_test.curry&quot;&gt;test case&lt;/a&gt; for the same.&lt;/p&gt;
+
+&lt;p&gt;Next I will be working on the &lt;code&gt;=:&amp;lt;=&lt;/code&gt; and the &lt;code&gt;=:&amp;lt;&amp;lt;=&lt;/code&gt; operators which are described in this &lt;a href=&quot;http://link.springer.com/chapter/10.1007%2F11680093_2&quot;&gt;paper&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Refactoring of expressions</title>

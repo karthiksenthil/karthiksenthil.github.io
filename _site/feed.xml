@@ -7,6 +7,19 @@
 		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>[GSoC 2016] Refactoring symbols and implementing External functions</title>
+				        
+				
+					<description>&lt;p&gt;The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb&quot;&gt;CT_Symbols&lt;/a&gt;. This involved a lot of changes to the structure of object code but in the end the module is very concise and accurate. We also tested all the existing test cases against the new module.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 05 Jul 2016 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2016/07/05/gsoc16/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/07/05/gsoc16/</guid>
+			</item>
+		
+			<item>
 				<title>[GSoC 2016] Refactoring of expressions</title>
 				        
 				
@@ -121,19 +134,6 @@
 				<pubDate>Thu, 26 May 2016 00:00:00 +0530</pubDate>
 				<link>https://karthiksenthil.github.io/2016/05/26/gsoc16/</link>
 				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/26/gsoc16/</guid>
-			</item>
-		
-			<item>
-				<title>[GSoC 2016] Coding phase - First post</title>
-				        
-				
-					<description>&lt;p&gt;Hello all!&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Mon, 23 May 2016 00:00:00 +0530</pubDate>
-				<link>https://karthiksenthil.github.io/2016/05/23/gsoc16/</link>
-				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/23/gsoc16/</guid>
 			</item>
 		
 	</channel>

@@ -4,13 +4,26 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-07-06T01:20:31+05:30</updated>
+ <updated>2016-07-10T15:42:27+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Support for variables in ruby_curry</title>
+   <link href="https://karthiksenthil.github.io/2016/07/10/gsoc16/"/>
+   <updated>2016-07-10T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/07/10/gsoc16</id>
+   <content type="html">&lt;p&gt;Over the last few days I was working on implementing the equation constrained operator (=:&amp;lt;=). After working on the &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb#L141&quot;&gt;first version&lt;/a&gt; algorithm for it, we realised that support for variables was an important component specifically needed to test the operator.&lt;/p&gt;
+
+&lt;p&gt;We then worked on adding support for Variables both in compile time(object code generation) and runtime(execution). The concept implemented is also called &lt;code&gt;Narrowing&lt;/code&gt;. This support was implemented by means of a generator table which maps a data constructor with token value 4 to an expression. Currently the expressions are bound during compile time, but it is preffered if the same happens freshly during runtime. This will be my next task of focus.&lt;/p&gt;
+
+&lt;p&gt;The support for variables can be found in this &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/commit/8528a5ca93090a6cb8f8e3f194541fc1d12be099&quot;&gt;commit&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Refactoring symbols and implementing External functions</title>

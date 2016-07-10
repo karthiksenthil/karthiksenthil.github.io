@@ -7,6 +7,19 @@
 		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>[GSoC 2016] Support for variables in ruby_curry</title>
+				        
+				
+					<description>&lt;p&gt;Over the last few days I was working on implementing the equation constrained operator (=:&amp;lt;=). After working on the &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb#L141&quot;&gt;first version&lt;/a&gt; algorithm for it, we realised that support for variables was an important component specifically needed to test the operator.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 10 Jul 2016 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2016/07/10/gsoc16/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/07/10/gsoc16/</guid>
+			</item>
+		
+			<item>
 				<title>[GSoC 2016] Refactoring symbols and implementing External functions</title>
 				        
 				
@@ -121,19 +134,6 @@
 				<pubDate>Sun, 29 May 2016 00:00:00 +0530</pubDate>
 				<link>https://karthiksenthil.github.io/2016/05/29/gsoc16/</link>
 				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/29/gsoc16/</guid>
-			</item>
-		
-			<item>
-				<title>[GSoC 2016] Backtrack bug solved</title>
-				        
-				
-					<description>&lt;p&gt;This post is to update about the current status of work in ruby_curry as part of GSoC 2016.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Thu, 26 May 2016 00:00:00 +0530</pubDate>
-				<link>https://karthiksenthil.github.io/2016/05/26/gsoc16/</link>
-				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/05/26/gsoc16/</guid>
 			</item>
 		
 	</channel>

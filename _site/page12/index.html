@@ -47,25 +47,25 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/05/18/gsoc16/">
-        [GSoC 2016] Completion of status report
+      <a href="/2016/05/23/gsoc16/">
+        [GSoC 2016] Coding phase - First post
       </a>
     </h1>
 
-    <time datetime="2016-05-18T00:00:00+05:30" class="post-date">18 May 2016</time>
+    <time datetime="2016-05-23T00:00:00+05:30" class="post-date">23 May 2016</time>
 
-    <p>I have completed the brief status <a href="https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing">report</a> of the current ruby_curry codebase. The report is organised into 3 main sections -</p>
+    <p>Hello all!</p>
+
+<p>As part of the initial stage of the Coding Phase, I had a discussion with my mentor regarding the immediate set of tasks/features to be implemented for the tool (picking from the points highlighted in the proposal). The following are tasks at hand:</p>
 <ol>
-<li> Installation/Usage instructions </li>
-<li> Code Workflow </li>
-<li> Directory-wise file descriptions </li>
+<li> <b>translator</b> - A system to translate Curry into a format that is suitable for ruby_curry compiler. At the moment we aim to directly translating Curry to JSON if possible with definitional tree information. </li>
+<li> <b>backtracking</b> - The compiler has a stack based backtracking feature to handle CHOICE in Curry. However this module seems buggy and fails for certain examples.</li>
+<li> Quality and type system </li>
 </ol>
 
-<p>The primary purpose of the report is to document the current work so as to comprehensively evaluate the tool from scratch. The evaluation will aid in planning the first set of steps to be undertaken in the upcoming “Coding Phase” of GSoC. The document will also aid the users interested in using the current version of ruby_curry.</p>
+<p>In addition, I have also added a new test framework to ruby_curry which will enable to integrate all unit tests. This will be beneficial in continously testing the new changes that are being made to the compiler or other relevant modules of the tool.</p>
 
-<p>Please leave your comments/suggestions in the report :)</p>
-
-<p>Looking forward to start the Coding Phase !</p>
+<p>To integrate all tests, I added a <a href="https://github.com/ruby/rake">Rake</a> task for tests. All the current unit tests can be run by the <code>rake test</code> command in the base directory of ruby_curry. The commit for this change can be found <a href="https://github.com/karthiksenthil/ruby_curry/commit/d59d1108c19003efeef8b111794546f40412cab5">here</a>.</p>
 
   </article>
   
@@ -81,6 +81,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/10/gsoc16/">
+    <h3>[GSoC 2016] Support for variables in ruby_curry </h3> 
+  </a>
+  <small><time datetime="2016-07-10T00:00:00+05:30" class="post-date">10 Jul 2016</time></small>
+  <div><p>Over the last few days I was working on implementing the equation constrained operator (=:&lt;=). After working on the <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb#L141">first version</a> algorithm for it,...</div>
 
   <a href="/2016/07/05/gsoc16/">
     <h3>[GSoC 2016] Refactoring symbols and implementing External functions </h3> 
@@ -198,7 +204,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-07-06T01:20:31+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-10T15:42:27+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

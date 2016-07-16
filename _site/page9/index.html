@@ -47,38 +47,22 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/02/gsoc16/">
-        [GSoC 2016] Progress on translator system
+      <a href="/2016/06/05/gsoc16/">
+        [GSoC 2016] Introducing RCurry - An abstraction layer
       </a>
     </h1>
 
-    <time datetime="2016-06-02T00:00:00+05:30" class="post-date">02 Jun 2016</time>
+    <time datetime="2016-06-05T00:00:00+05:30" class="post-date">05 Jun 2016</time>
 
-    <p>Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -</p>
+    <p>Hello all!</p>
 
-<pre><code>
-mynot.curry
+<p>As discussed in the previous post, we made a drastic change in the architecture of ruby_curry by utilising <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.pdf">ICurry</a> to cover the compilation steps while providing a robust runtime environment in ruby.</p>
 
-data myBool = myTrue | myFalse
+<p>My mentor and I had discussions about how cumbersome the task of directly converting <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">ICurry to Ruby</a> was. The feature set was limited and needed extra programming just to obtain some information for the Ruby object code. As a suggestion to solve this, we decided to introduce a layer of abstraction over ICurry - called RCurry. RCurry will be a code level abstraction of the information in ICurry i.e. in order to convert ICurry into executable code we add an abstract layer which can then be converted to object code in any language.</p>
 
-myNot myTrue = myFalse
-myNot myFalse = myTrue
+<p>This would make the generation of object highly language independent. All one has to do is create a runtime environment for execution and develop a pretty printer(or converter) for translating RCurry into language of their choice. This logical partition also makes maintenance and development easy.</p>
 
-main = myNot (myNot myTrue)
-</code></pre>
-
-<p>The curry program for the translator can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">here</a>.</p>
-
-<p>Currently this program is not executable with the support available in the Github repository of ruby_curry. My mentor and myself have set up a temporary try server and repo to test development stubs since the ICurry library is itself big and difficult to set up.</p>
-
-<p>There is a slight re-architecture in the flow diagram of ruby_curry :-</p>
-
-<p>Curry source program —&gt; ICurry library —&gt; .icur representation —&gt; Ruby executable object code</p>
-
-<p>i.e we have moved the compilation computations to ICurry and implemented the complete runtime environment in ruby. This is to ensure better scaling and ability to handle larger Curry programs, which could not be achieved in a ruby based compiler.</p>
-
-<p>There might be further changes to better this current architecture. I will post about the same when complete :)</p>
-
+<p>On these lines, I have been working on defining RCurry and a module to convert ICurry to RCurry called ICurryToAbstractRuby. These modules are currently a stub under development and being tested on the try server. I plan on making it available on the Github repo by the end of next week, along with a couple of tasks implemented from the TODO list … So stay tuned :)</p>
 
   </article>
   
@@ -94,6 +78,12 @@ main = myNot (myNot myTrue)
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/16/gsoc16/">
+    <h3>[GSoC 2016] Updates on external functions </h3> 
+  </a>
+  <small><time datetime="2016-07-16T00:00:00+05:30" class="post-date">16 Jul 2016</time></small>
+  <div><p>Hello all!</p> <p>I spent the last week working on tasks related to extending support for more external functions in runtime environment and integrating variables into...</div>
 
   <a href="/2016/07/10/gsoc16/">
     <h3>[GSoC 2016] Support for variables in ruby_curry </h3> 
@@ -217,7 +207,7 @@ main = myNot (myNot myTrue)
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-07-10T15:42:27+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-16T15:28:52+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

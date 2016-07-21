@@ -47,20 +47,20 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/25/gsoc16/">
-        [GSoC 2016] Progress on External runtime functions
+      <a href="/2016/06/30/gsoc16/">
+        [GSoC 2016] Refactoring of expressions
       </a>
     </h1>
 
-    <time datetime="2016-06-25T00:00:00+05:30" class="post-date">25 Jun 2016</time>
+    <time datetime="2016-06-30T00:00:00+05:30" class="post-date">30 Jun 2016</time>
 
-    <p>After the codebase merge a lot of new tasks and issues turned up. One of the important tasks is adding runtime support for externally defined functions in <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/Prelude.rb">Prelude</a>. I have made a complete <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/DOUBTS">list</a> of unimplemented External functions and their priorities. Current status of this module can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb">here</a>.</p>
+    <p>Hello all!</p>
 
-<p>Before this task I also worked on making a more robust <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/test/test_positives.rb">test suite</a> in ruby. All tests can be run using the <code>rake test</code> command and in order to force recompile all intermediate files from scratch for testing, the command <code>rake ftest</code> can be used.</p>
+<p>I spent the last few days working on refactoring the old expressions.rb (in ruby runtime environment) into a revamped <code>CT_Expressions</code> module. This solves the issue of namespaces thus giving flexibility to names being used in the Curry programs. The entire module is divided into 4 files - <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions.rb">expression class definitions</a>, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions_print.rb">expression printing</a>, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions_equality.rb">expression equality</a> and <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions_utils.rb">expression utilities</a>. We tested this new module on all the existing test cases.</p>
 
-<p>I am currently working of refactoring <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/expressions.rb">expressions.rb</a> to facilitate the definition of some External functions.</p>
+<p>After this refactoring I moved ahead to implement the equality operation <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/equality-algorithm.txt">algorithm</a> in <code>CT_External</code> which has also been completed now. </p>
 
-<p>The complete list of upcoming tasks can be found <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/TODO">here</a>.</p>
+<p>I am now working on the Prelude compare operation based on this <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/compare-algorithm.txt">algorithm</a>.</p>
 
   </article>
   
@@ -76,6 +76,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/21/gsoc16/">
+    <h3>[GSoC 2016] Documentation and upcoming tasks </h3> 
+  </a>
+  <small><time datetime="2016-07-21T00:00:00+05:30" class="post-date">21 Jul 2016</time></small>
+  <div><p>The last week was focussed on some minor tasks like code cleanup, updating TODO and looking into implementations of equality-constraint operators like <code>cond</code> and <code>=:=</code>.</p>...</div>
 
   <a href="/2016/07/16/gsoc16/">
     <h3>[GSoC 2016] Updates on external functions </h3> 
@@ -205,7 +211,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-07-16T15:28:52+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-22T00:45:05+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

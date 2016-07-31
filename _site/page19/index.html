@@ -47,28 +47,29 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2015/08/18/multrix/">
-        Multrix - A tool for dynamic dependence analysis of a program
+      <a href="/2016/05/07/gsoc16/">
+        [GSoC 2016] Community Bonding - First Post
       </a>
     </h1>
 
-    <time datetime="2015-08-18T00:00:00+05:30" class="post-date">18 Aug 2015</time>
+    <time datetime="2016-05-07T00:00:00+05:30" class="post-date">07 May 2016</time>
 
-    <p><em>A project undertaken in the <a href="http://hpc.nitk.ac.in/">HPC Research Group</a> at National Institute of Technology Karnataka, India</em></p>
+    <p>Hello all!</p>
 
-<p>Multrix is an automatic, dynamic and language-independent tool to construct the Node Dependency Matrix(NDM) of an input program. It uses dynamic binary instrumentation techniques to identify dependencies at instruction level in the input program, and reprsent the same using the NDM.</p>
+<p>This year as part of Google Summer of Code 2016 I will continue working on <a href="https://github.com/karthiksenthil/ruby_curry">ruby_curry</a>, extending it to a full fledged compiler implementation for FlatCurry, a flavour of the functional logic programming language <a href="https://en.wikipedia.org/wiki/Curry_(programming_language)">Curry</a>.</p>
 
-<p>The Intel PIN DBI framework was used for instrumentation. Pin provides great flexibility in analysing executables with features to insert stubs or breakpoints in the running program. A custom program written using the Pin API to analyse running programs is a called PinTool.</p>
+<p>More details about the project can be found <a href="https://summerofcode.withgoogle.com/projects/#4517222395412480">here</a>.</p>
 
-<p>Usage and execution cycle in Pin :</p>
-
+<p>After discussions with my mentor, Prof. Antoy, I have decided to spend the initial part of the Community Bonding period for the following -</p>
 <ol>
-  <li>Design Pintool to perform required analysis</li>
-  <li>Compile the Pintool into an <code>so</code> file(shared object)</li>
-  <li>Attach the file to the program and execute it</li>
+<li> Status Report - detailed draft of current status of ruby_curry w.r.t. features and bugs </li>
+<li> Setting up <a href="https://www.informatik.uni-kiel.de/~pakcs/">PAKCS</a> and <a href="https://www-ps.informatik.uni-kiel.de/kics2/">KiCS2</a> on local machine </li>
+<li> Survey on the above compilers </li>
 </ol>
 
-<p><em>Work in progress</em></p>
+<p>Looking forward to learn more :)</p>
+
+<p>P.S. : And yes, this year I will update about my progress in this project through regular blog posts on my personal website itself.</p>
 
   </article>
   
@@ -84,6 +85,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/31/gsoc16/">
+    <h3>[GSoC 2016] Documentation of ruby_curry </h3> 
+  </a>
+  <small><time datetime="2016-07-31T00:00:00+05:30" class="post-date">31 Jul 2016</time></small>
+  <div><p>Due to upcoming time constraints I have decided to focus on the important task of documenting the design of ruby_curry. This will be a very...</div>
 
   <a href="/2016/07/21/gsoc16/">
     <h3>[GSoC 2016] Documentation and upcoming tasks </h3> 
@@ -219,7 +226,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-07-22T00:45:05+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-31T23:01:28+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

@@ -47,22 +47,20 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/07/16/gsoc16/">
-        [GSoC 2016] Updates on external functions
+      <a href="/2016/07/21/gsoc16/">
+        [GSoC 2016] Documentation and upcoming tasks
       </a>
     </h1>
 
-    <time datetime="2016-07-16T00:00:00+05:30" class="post-date">16 Jul 2016</time>
+    <time datetime="2016-07-21T00:00:00+05:30" class="post-date">21 Jul 2016</time>
 
-    <p>Hello all!</p>
+    <p>The last week was focussed on some minor tasks like code cleanup, updating TODO and looking into implementations of equality-constraint operators like <code>cond</code> and <code>=:=</code>.</p>
 
-<p>I spent the last week working on tasks related to extending support for more external functions in runtime environment and integrating variables into different sections of ruby_curry.</p>
+<p>Since I am new to the Curry syntax and semantics it is taking some more time to understand the difference between these operators and coming up with Curry tests to differentiate between their execution. I will work on them over the next few days.</p>
 
-<p>After implementing free variables and the concept of Narrowing there are a couple of Curry examples which run into an infinite loop during runtime execution (<a href="https://github.com/karthiksenthil/ruby_curry/blob/master/curry_examples/last_1.curry">last_1</a>, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/curry_examples/length_narrow.curry">length_narrow</a>). We identified that this problem was arising due to a design issue in FlatCurry. We are planning to solve this by making changes to ICurry directly in order to bring about minimum changes in ruby_curry.</p>
+<p>Along with this, I will also start work on documenting the overall design scheme, stages accomplished, assessment, evaluation pipeline, etc. of ruby_curry. This will act as a guide to anybody interested in continuing the current stage of work in the compiler system.</p>
 
-<p>Apart from this, as mentioned in previous post, the generator table expressions are now bound freshly during runtime instead of compile time. I also worked on moving <code>integers</code> into a separate module <code>CT_Integer</code> which was a long pending task.</p>
-
-<p>The upcoming tasks have been updated in <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/TODO">TODO</a> which mainly include new external functions like =:=, cond and solving some issues like support for variables in external functions.</p>
+<p>The progress of ruby_curry can always be tracked <a href="https://github.com/karthiksenthil/ruby_curry">here</a>.</p>
 
   </article>
   
@@ -78,6 +76,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/07/31/gsoc16/">
+    <h3>[GSoC 2016] Documentation of ruby_curry </h3> 
+  </a>
+  <small><time datetime="2016-07-31T00:00:00+05:30" class="post-date">31 Jul 2016</time></small>
+  <div><p>Due to upcoming time constraints I have decided to focus on the important task of documenting the design of ruby_curry. This will be a very...</div>
 
   <a href="/2016/07/21/gsoc16/">
     <h3>[GSoC 2016] Documentation and upcoming tasks </h3> 
@@ -213,7 +217,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-07-22T00:45:05+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-07-31T23:01:28+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

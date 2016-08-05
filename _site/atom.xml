@@ -4,13 +4,24 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-07-31T23:01:28+05:30</updated>
+ <updated>2016-08-05T22:54:23+05:30</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
    <email>karthik.senthil94@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[GSoC 2016] Progress in ruby_curry documentation</title>
+   <link href="https://karthiksenthil.github.io/2016/08/05/gsoc16/"/>
+   <updated>2016-08-05T00:00:00+05:30</updated>
+   <id>https://karthiksenthil.github.io/2016/08/05/gsoc16</id>
+   <content type="html">&lt;p&gt;Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the “Translation” unit and have described the pipeline in this stage including a detailed account of RCurry - the Ruby based abstraction over ICurry. The progress can be observed &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/Documentation.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I will next work on documenting the “Object code” and “Runtime” units. I will also be discussing with my mentor about the future work and directions for more work regarding this tool.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[GSoC 2016] Documentation of ruby_curry</title>

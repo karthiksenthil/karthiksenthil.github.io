@@ -7,6 +7,19 @@
 		<atom:link href="https://karthiksenthil.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>[GSoC 2016] Progress in ruby_curry documentation</title>
+				        
+				
+					<description>&lt;p&gt;Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the &amp;#8220;Translation&amp;#8221; unit and have described the pipeline in this stage including a detailed account of RCurry - the Ruby based abstraction over ICurry. The progress can be observed &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/Documentation.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Fri, 05 Aug 2016 00:00:00 +0530</pubDate>
+				<link>https://karthiksenthil.github.io/2016/08/05/gsoc16/</link>
+				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/08/05/gsoc16/</guid>
+			</item>
+		
+			<item>
 				<title>[GSoC 2016] Documentation of ruby_curry</title>
 				        
 				
@@ -121,19 +134,6 @@
 				<pubDate>Wed, 15 Jun 2016 00:00:00 +0530</pubDate>
 				<link>https://karthiksenthil.github.io/2016/06/15/gsoc16/</link>
 				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/06/15/gsoc16/</guid>
-			</item>
-		
-			<item>
-				<title>[GSoC 2016] Progress in RCurry</title>
-				        
-				
-					<description>&lt;p&gt;Hello all!&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 12 Jun 2016 00:00:00 +0530</pubDate>
-				<link>https://karthiksenthil.github.io/2016/06/12/gsoc16/</link>
-				<guid isPermaLink="true">https://karthiksenthil.github.io/2016/06/12/gsoc16/</guid>
 			</item>
 		
 	</channel>

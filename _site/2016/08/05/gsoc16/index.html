@@ -10,7 +10,7 @@
 
   <title>
     
-      [GSoC 2016] Introducing RCurry - An abstraction layer &middot; Karthik Senthil
+      [GSoC 2016] Progress in ruby_curry documentation &middot; Karthik Senthil
     
   </title>
 
@@ -44,17 +44,11 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">[GSoC 2016] Introducing RCurry - An abstraction layer</h1>
-  <time datetime="2016-06-05T00:00:00+05:30" class="post-date">05 Jun 2016</time>
-  <p>Hello all!</p>
+  <h1 class="post-title">[GSoC 2016] Progress in ruby_curry documentation</h1>
+  <time datetime="2016-08-05T00:00:00+05:30" class="post-date">05 Aug 2016</time>
+  <p>Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the “Translation” unit and have described the pipeline in this stage including a detailed account of RCurry - the Ruby based abstraction over ICurry. The progress can be observed <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/Documentation.md">here</a>.</p>
 
-<p>As discussed in the previous post, we made a drastic change in the architecture of ruby_curry by utilising <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.pdf">ICurry</a> to cover the compilation steps while providing a robust runtime environment in ruby.</p>
-
-<p>My mentor and I had discussions about how cumbersome the task of directly converting <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/ICurryToRuby.curry">ICurry to Ruby</a> was. The feature set was limited and needed extra programming just to obtain some information for the Ruby object code. As a suggestion to solve this, we decided to introduce a layer of abstraction over ICurry - called RCurry. RCurry will be a code level abstraction of the information in ICurry i.e. in order to convert ICurry into executable code we add an abstract layer which can then be converted to object code in any language.</p>
-
-<p>This would make the generation of object highly language independent. All one has to do is create a runtime environment for execution and develop a pretty printer(or converter) for translating RCurry into language of their choice. This logical partition also makes maintenance and development easy.</p>
-
-<p>On these lines, I have been working on defining RCurry and a module to convert ICurry to RCurry called ICurryToAbstractRuby. These modules are currently a stub under development and being tested on the try server. I plan on making it available on the Github repo by the end of next week, along with a couple of tasks implemented from the TODO list … So stay tuned :)</p>
+<p>I will next work on documenting the “Object code” and “Runtime” units. I will also be discussing with my mentor about the future work and directions for more work regarding this tool.</p>
 
 </article>
 
@@ -62,15 +56,6 @@
 <aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/08/05/gsoc16/">
-            [GSoC 2016] Progress in ruby_curry documentation
-            <small><time datetime="2016-08-05T00:00:00+05:30">05 Aug 2016</time></small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -86,6 +71,15 @@
           <a href="/2016/07/21/gsoc16/">
             [GSoC 2016] Documentation and upcoming tasks
             <small><time datetime="2016-07-21T00:00:00+05:30">21 Jul 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/16/gsoc16/">
+            [GSoC 2016] Updates on external functions
+            <small><time datetime="2016-07-16T00:00:00+05:30">16 Jul 2016</time></small>
           </a>
         </h3>
       </li>

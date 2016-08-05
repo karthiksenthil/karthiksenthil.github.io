@@ -47,20 +47,18 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/06/30/gsoc16/">
-        [GSoC 2016] Refactoring of expressions
+      <a href="/2016/07/05/gsoc16/">
+        [GSoC 2016] Refactoring symbols and implementing External functions
       </a>
     </h1>
 
-    <time datetime="2016-06-30T00:00:00+05:30" class="post-date">30 Jun 2016</time>
+    <time datetime="2016-07-05T00:00:00+05:30" class="post-date">05 Jul 2016</time>
 
-    <p>Hello all!</p>
+    <p>The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb">CT_Symbols</a>. This involved a lot of changes to the structure of object code but in the end the module is very concise and accurate. We also tested all the existing test cases against the new module.</p>
 
-<p>I spent the last few days working on refactoring the old expressions.rb (in ruby runtime environment) into a revamped <code>CT_Expressions</code> module. This solves the issue of namespaces thus giving flexibility to names being used in the Curry programs. The entire module is divided into 4 files - <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions.rb">expression class definitions</a>, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions_print.rb">expression printing</a>, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions_equality.rb">expression equality</a> and <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Expressions_utils.rb">expression utilities</a>. We tested this new module on all the existing test cases.</p>
+<p>After that I implemented the <code>compare</code> External function as per the algorithm. Initially the comparison was done based on alphabetical ordering of symbol names for data constructors, but this was a mistake and was later corrected to comparison of token value instead. I also added a corresponding <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/curry_examples/compare_test.curry">test case</a> for the same.</p>
 
-<p>After this refactoring I moved ahead to implement the equality operation <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/equality-algorithm.txt">algorithm</a> in <code>CT_External</code> which has also been completed now. </p>
-
-<p>I am now working on the Prelude compare operation based on this <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/compare-algorithm.txt">algorithm</a>.</p>
+<p>Next I will be working on the <code>=:&lt;=</code> and the <code>=:&lt;&lt;=</code> operators which are described in this <a href="http://link.springer.com/chapter/10.1007%2F11680093_2">paper</a>.</p>
 
   </article>
   
@@ -76,6 +74,12 @@
 </div> -->
 
 <h2> All posts </h2>
+
+  <a href="/2016/08/05/gsoc16/">
+    <h3>[GSoC 2016] Progress in ruby_curry documentation </h3> 
+  </a>
+  <small><time datetime="2016-08-05T00:00:00+05:30" class="post-date">05 Aug 2016</time></small>
+  <div><p>Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the “Translation” unit...</div>
 
   <a href="/2016/07/31/gsoc16/">
     <h3>[GSoC 2016] Documentation of ruby_curry </h3> 
@@ -217,7 +221,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-07-31T23:01:28+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-08-05T22:54:23+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

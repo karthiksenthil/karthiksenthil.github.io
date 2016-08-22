@@ -4,7 +4,7 @@
  <title>Karthik Senthil</title>
  <link href="https://karthiksenthil.github.io/atom.xml" rel="self"/>
  <link href="https://karthiksenthil.github.io/"/>
- <updated>2016-08-05T22:54:23+05:30</updated>
+ <updated>2016-08-21T19:54:55-05:00</updated>
  <id>https://karthiksenthil.github.io</id>
  <author>
    <name>Karthik Senthil</name>
@@ -13,9 +13,37 @@
 
  
  <entry>
+   <title>[GSoC 2016] Signing off from GSoC 2016 !</title>
+   <link href="https://karthiksenthil.github.io/2016/08/21/gsoc16/"/>
+   <updated>2016-08-21T00:00:00-05:00</updated>
+   <id>https://karthiksenthil.github.io/2016/08/21/gsoc16</id>
+   <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
+
+&lt;p&gt;It has been a very interesting and fruitful journey this GSoC, specifically with the progress made in ruby_curry’s usability and range of programs that can be currently compiled with it.&lt;/p&gt;
+
+&lt;p&gt;There are still many avenues for improvements like :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Completing CT_External.rb with all support for External functions &lt;/li&gt;
+&lt;li&gt; With introduction of suppport for Variables, many unimplemented edge cases can be implemented&lt;/li&gt;
+&lt;li&gt; A fully compiled, distributable binary for ruby_curry&lt;/li&gt;
+&lt;li&gt; More documentation regarding the details of ICurry and pipeline followed&lt;/li&gt;
+&lt;li&gt; Any interesting feature or extension to improve the performance of the compiler as a whole. Possible direction could be in ICurry translation module. &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The current status of the project can be viewed online &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I would be more than happy to guide anybody interested in learning or pursuing any part of this work. The ultimate aim of ruby_curry is to act as an ideal research playground which can be used by students and researchers working on functional logic programming paradigms.&lt;/p&gt;
+
+&lt;p&gt;As always you can contact me via &lt;a href=&quot;https://github.com/karthiksenthil&quot;&gt;Github&lt;/a&gt; or drop in an &lt;a href=&quot;mailto:karthik.senthil94@gmail.com&quot;&gt;email&lt;/a&gt; about your queries regarding this work. &lt;/p&gt;
+
+&lt;p&gt;Looking forward to continue contributing to this prized project and overall to the dearest open source community :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>[GSoC 2016] Progress in ruby_curry documentation</title>
    <link href="https://karthiksenthil.github.io/2016/08/05/gsoc16/"/>
-   <updated>2016-08-05T00:00:00+05:30</updated>
+   <updated>2016-08-05T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/08/05/gsoc16</id>
    <content type="html">&lt;p&gt;Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the “Translation” unit and have described the pipeline in this stage including a detailed account of RCurry - the Ruby based abstraction over ICurry. The progress can be observed &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/Documentation.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -26,7 +54,7 @@
  <entry>
    <title>[GSoC 2016] Documentation of ruby_curry</title>
    <link href="https://karthiksenthil.github.io/2016/07/31/gsoc16/"/>
-   <updated>2016-07-31T00:00:00+05:30</updated>
+   <updated>2016-07-31T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/07/31/gsoc16</id>
    <content type="html">&lt;p&gt;Due to upcoming time constraints I have decided to focus on the important task of documenting the design of ruby_curry. This will be a very critical document to guide any new developers interested in this project.&lt;/p&gt;
 
@@ -37,7 +65,7 @@
  <entry>
    <title>[GSoC 2016] Documentation and upcoming tasks</title>
    <link href="https://karthiksenthil.github.io/2016/07/21/gsoc16/"/>
-   <updated>2016-07-21T00:00:00+05:30</updated>
+   <updated>2016-07-21T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/07/21/gsoc16</id>
    <content type="html">&lt;p&gt;The last week was focussed on some minor tasks like code cleanup, updating TODO and looking into implementations of equality-constraint operators like &lt;code&gt;cond&lt;/code&gt; and &lt;code&gt;=:=&lt;/code&gt;.&lt;/p&gt;
 
@@ -52,7 +80,7 @@
  <entry>
    <title>[GSoC 2016] Updates on external functions</title>
    <link href="https://karthiksenthil.github.io/2016/07/16/gsoc16/"/>
-   <updated>2016-07-16T00:00:00+05:30</updated>
+   <updated>2016-07-16T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/07/16/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -69,7 +97,7 @@
  <entry>
    <title>[GSoC 2016] Support for variables in ruby_curry</title>
    <link href="https://karthiksenthil.github.io/2016/07/10/gsoc16/"/>
-   <updated>2016-07-10T00:00:00+05:30</updated>
+   <updated>2016-07-10T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/07/10/gsoc16</id>
    <content type="html">&lt;p&gt;Over the last few days I was working on implementing the equation constrained operator (=:&amp;lt;=). After working on the &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb#L141&quot;&gt;first version&lt;/a&gt; algorithm for it, we realised that support for variables was an important component specifically needed to test the operator.&lt;/p&gt;
 
@@ -82,7 +110,7 @@
  <entry>
    <title>[GSoC 2016] Refactoring symbols and implementing External functions</title>
    <link href="https://karthiksenthil.github.io/2016/07/05/gsoc16/"/>
-   <updated>2016-07-05T00:00:00+05:30</updated>
+   <updated>2016-07-05T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/07/05/gsoc16</id>
    <content type="html">&lt;p&gt;The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb&quot;&gt;CT_Symbols&lt;/a&gt;. This involved a lot of changes to the structure of object code but in the end the module is very concise and accurate. We also tested all the existing test cases against the new module.&lt;/p&gt;
 
@@ -95,7 +123,7 @@
  <entry>
    <title>[GSoC 2016] Refactoring of expressions</title>
    <link href="https://karthiksenthil.github.io/2016/06/30/gsoc16/"/>
-   <updated>2016-06-30T00:00:00+05:30</updated>
+   <updated>2016-06-30T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/30/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -110,7 +138,7 @@
  <entry>
    <title>[GSoC 2016] Progress on External runtime functions</title>
    <link href="https://karthiksenthil.github.io/2016/06/25/gsoc16/"/>
-   <updated>2016-06-25T00:00:00+05:30</updated>
+   <updated>2016-06-25T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/25/gsoc16</id>
    <content type="html">&lt;p&gt;After the codebase merge a lot of new tasks and issues turned up. One of the important tasks is adding runtime support for externally defined functions in &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/Prelude.rb&quot;&gt;Prelude&lt;/a&gt;. I have made a complete &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/DOUBTS&quot;&gt;list&lt;/a&gt; of unimplemented External functions and their priorities. Current status of this module can be found &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -125,7 +153,7 @@
  <entry>
    <title>[GSoC 2016] Merged Github repository with try server codebase</title>
    <link href="https://karthiksenthil.github.io/2016/06/20/gsoc16/"/>
-   <updated>2016-06-20T00:00:00+05:30</updated>
+   <updated>2016-06-20T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/20/gsoc16</id>
    <content type="html">&lt;p&gt;Over the last few weeks I have been adding all the development code to the try server codebase for immediate testing and rapid modifications. The tool has now reached a stable state which can be used to compile and execute simple Curry programs, and hence I have merged this development code with the stable Github repository for public viewing and usage.&lt;/p&gt;
 
@@ -142,7 +170,7 @@
  <entry>
    <title>[GSoC 2016] Cleanup and progress for mid evaluations</title>
    <link href="https://karthiksenthil.github.io/2016/06/15/gsoc16/"/>
-   <updated>2016-06-15T00:00:00+05:30</updated>
+   <updated>2016-06-15T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/15/gsoc16</id>
    <content type="html">&lt;p&gt;This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.&lt;/p&gt;
 
@@ -155,7 +183,7 @@
  <entry>
    <title>[GSoC 2016] Progress in RCurry</title>
    <link href="https://karthiksenthil.github.io/2016/06/12/gsoc16/"/>
-   <updated>2016-06-12T00:00:00+05:30</updated>
+   <updated>2016-06-12T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/12/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -168,7 +196,7 @@
  <entry>
    <title>[GSoC 2016] Introducing RCurry - An abstraction layer</title>
    <link href="https://karthiksenthil.github.io/2016/06/05/gsoc16/"/>
-   <updated>2016-06-05T00:00:00+05:30</updated>
+   <updated>2016-06-05T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/05/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -185,7 +213,7 @@
  <entry>
    <title>[GSoC 2016] Progress on translator system</title>
    <link href="https://karthiksenthil.github.io/2016/06/02/gsoc16/"/>
-   <updated>2016-06-02T00:00:00+05:30</updated>
+   <updated>2016-06-02T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/06/02/gsoc16</id>
    <content type="html">&lt;p&gt;Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully produced executable object code for the simple mynot.curry example -&lt;/p&gt;
 
@@ -218,7 +246,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Translator system for ruby_curry</title>
    <link href="https://karthiksenthil.github.io/2016/05/29/gsoc16/"/>
-   <updated>2016-05-29T00:00:00+05:30</updated>
+   <updated>2016-05-29T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/29/gsoc16</id>
    <content type="html">&lt;p&gt;I had a discussion with my mentor regarding a translator system which would handle the frontend parsing of Curry source program into an intermediate form suitable for the ruby_curry compiler. We concluded that it would be a better option to use an already implemented library for this task, called &lt;a href=&quot;https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.txt&quot;&gt;ICurry&lt;/a&gt;.&lt;/p&gt;
 
@@ -233,7 +261,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Backtrack bug solved</title>
    <link href="https://karthiksenthil.github.io/2016/05/26/gsoc16/"/>
-   <updated>2016-05-26T00:00:00+05:30</updated>
+   <updated>2016-05-26T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/26/gsoc16</id>
    <content type="html">&lt;p&gt;This post is to update about the current status of work in ruby_curry as part of GSoC 2016.&lt;/p&gt;
 
@@ -254,7 +282,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Coding phase - First post</title>
    <link href="https://karthiksenthil.github.io/2016/05/23/gsoc16/"/>
-   <updated>2016-05-23T00:00:00+05:30</updated>
+   <updated>2016-05-23T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/23/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -274,7 +302,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Completion of status report</title>
    <link href="https://karthiksenthil.github.io/2016/05/18/gsoc16/"/>
-   <updated>2016-05-18T00:00:00+05:30</updated>
+   <updated>2016-05-18T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/18/gsoc16</id>
    <content type="html">&lt;p&gt;I have completed the brief status &lt;a href=&quot;https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing&quot;&gt;report&lt;/a&gt; of the current ruby_curry codebase. The report is organised into 3 main sections -&lt;/p&gt;
 &lt;ol&gt;
@@ -294,7 +322,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Codebase status report and installing KiCS2</title>
    <link href="https://karthiksenthil.github.io/2016/05/13/gsoc16/"/>
-   <updated>2016-05-13T00:00:00+05:30</updated>
+   <updated>2016-05-13T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/13/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -315,7 +343,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Installing PAKCS</title>
    <link href="https://karthiksenthil.github.io/2016/05/09/gsoc16/"/>
-   <updated>2016-05-09T00:00:00+05:30</updated>
+   <updated>2016-05-09T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/09/gsoc16</id>
    <content type="html">&lt;p&gt;I spent the last few days surfing through the current codebase in ruby_curry in order to identify the code workflow for a single run of the tool.&lt;/p&gt;
 
@@ -332,7 +360,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>[GSoC 2016] Community Bonding - First Post</title>
    <link href="https://karthiksenthil.github.io/2016/05/07/gsoc16/"/>
-   <updated>2016-05-07T00:00:00+05:30</updated>
+   <updated>2016-05-07T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2016/05/07/gsoc16</id>
    <content type="html">&lt;p&gt;Hello all!&lt;/p&gt;
 
@@ -356,7 +384,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>Multrix - A tool for dynamic dependence analysis of a program</title>
    <link href="https://karthiksenthil.github.io/2015/08/18/multrix/"/>
-   <updated>2015-08-18T00:00:00+05:30</updated>
+   <updated>2015-08-18T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2015/08/18/multrix</id>
    <content type="html">&lt;p&gt;&lt;em&gt;A project undertaken in the &lt;a href=&quot;http://hpc.nitk.ac.in/&quot;&gt;HPC Research Group&lt;/a&gt; at National Institute of Technology Karnataka, India&lt;/em&gt;&lt;/p&gt;
 
@@ -379,7 +407,7 @@ main = myNot (myNot myTrue)
  <entry>
    <title>What is HPC?</title>
    <link href="https://karthiksenthil.github.io/2015/06/24/whats-hpc/"/>
-   <updated>2015-06-24T00:00:00+05:30</updated>
+   <updated>2015-06-24T00:00:00-05:00</updated>
    <id>https://karthiksenthil.github.io/2015/06/24/whats-hpc</id>
    <content type="html">&lt;p&gt;High Performance Computing(HPC) is becoming a trending term in Computer Science. Here is my view or definition of HPC in layman words.&lt;/p&gt;
 

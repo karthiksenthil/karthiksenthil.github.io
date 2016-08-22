@@ -47,16 +47,16 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2016/07/31/gsoc16/">
-        [GSoC 2016] Documentation of ruby_curry
+      <a href="/2016/08/05/gsoc16/">
+        [GSoC 2016] Progress in ruby_curry documentation
       </a>
     </h1>
 
-    <time datetime="2016-07-31T00:00:00+05:30" class="post-date">31 Jul 2016</time>
+    <time datetime="2016-08-05T00:00:00-05:00" class="post-date">05 Aug 2016</time>
 
-    <p>Due to upcoming time constraints I have decided to focus on the important task of documenting the design of ruby_curry. This will be a very critical document to guide any new developers interested in this project.</p>
+    <p>Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the “Translation” unit and have described the pipeline in this stage including a detailed account of RCurry - the Ruby based abstraction over ICurry. The progress can be observed <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/Documentation.md">here</a>.</p>
 
-<p>I have started initial work towards this and the current status can be viewed online <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/Documentation.md">here</a>. I will spend the upcoming week on the same task.</p>
+<p>I will next work on documenting the “Object code” and “Runtime” units. I will also be discussing with my mentor about the future work and directions for more work regarding this tool.</p>
 
   </article>
   
@@ -73,136 +73,142 @@
 
 <h2> All posts </h2>
 
+  <a href="/2016/08/21/gsoc16/">
+    <h3>[GSoC 2016] Signing off from GSoC 2016 ! </h3> 
+  </a>
+  <small><time datetime="2016-08-21T00:00:00-05:00" class="post-date">21 Aug 2016</time></small>
+  <div><p>Hello all!</p> <p>It has been a very interesting and fruitful journey this GSoC, specifically with the progress made in ruby_curry’s usability and range of programs...</div>
+
   <a href="/2016/08/05/gsoc16/">
     <h3>[GSoC 2016] Progress in ruby_curry documentation </h3> 
   </a>
-  <small><time datetime="2016-08-05T00:00:00+05:30" class="post-date">05 Aug 2016</time></small>
+  <small><time datetime="2016-08-05T00:00:00-05:00" class="post-date">05 Aug 2016</time></small>
   <div><p>Last week I worked mainly on updating the document describing the design, execution and evaluation of ruby_curry. I was able to complete the “Translation” unit...</div>
 
   <a href="/2016/07/31/gsoc16/">
     <h3>[GSoC 2016] Documentation of ruby_curry </h3> 
   </a>
-  <small><time datetime="2016-07-31T00:00:00+05:30" class="post-date">31 Jul 2016</time></small>
+  <small><time datetime="2016-07-31T00:00:00-05:00" class="post-date">31 Jul 2016</time></small>
   <div><p>Due to upcoming time constraints I have decided to focus on the important task of documenting the design of ruby_curry. This will be a very...</div>
 
   <a href="/2016/07/21/gsoc16/">
     <h3>[GSoC 2016] Documentation and upcoming tasks </h3> 
   </a>
-  <small><time datetime="2016-07-21T00:00:00+05:30" class="post-date">21 Jul 2016</time></small>
+  <small><time datetime="2016-07-21T00:00:00-05:00" class="post-date">21 Jul 2016</time></small>
   <div><p>The last week was focussed on some minor tasks like code cleanup, updating TODO and looking into implementations of equality-constraint operators like <code>cond</code> and <code>=:=</code>.</p>...</div>
 
   <a href="/2016/07/16/gsoc16/">
     <h3>[GSoC 2016] Updates on external functions </h3> 
   </a>
-  <small><time datetime="2016-07-16T00:00:00+05:30" class="post-date">16 Jul 2016</time></small>
+  <small><time datetime="2016-07-16T00:00:00-05:00" class="post-date">16 Jul 2016</time></small>
   <div><p>Hello all!</p> <p>I spent the last week working on tasks related to extending support for more external functions in runtime environment and integrating variables into...</div>
 
   <a href="/2016/07/10/gsoc16/">
     <h3>[GSoC 2016] Support for variables in ruby_curry </h3> 
   </a>
-  <small><time datetime="2016-07-10T00:00:00+05:30" class="post-date">10 Jul 2016</time></small>
+  <small><time datetime="2016-07-10T00:00:00-05:00" class="post-date">10 Jul 2016</time></small>
   <div><p>Over the last few days I was working on implementing the equation constrained operator (=:&lt;=). After working on the <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb#L141">first version</a> algorithm for it,...</div>
 
   <a href="/2016/07/05/gsoc16/">
     <h3>[GSoC 2016] Refactoring symbols and implementing External functions </h3> 
   </a>
-  <small><time datetime="2016-07-05T00:00:00+05:30" class="post-date">05 Jul 2016</time></small>
+  <small><time datetime="2016-07-05T00:00:00-05:00" class="post-date">05 Jul 2016</time></small>
   <div><p>The last week was focused on moving the Symbol definitions in the runtime environment to a separate ruby module, <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/src/compiler/CT_Symbols.rb">CT_Symbols</a>. This involved a lot...</div>
 
   <a href="/2016/06/30/gsoc16/">
     <h3>[GSoC 2016] Refactoring of expressions </h3> 
   </a>
-  <small><time datetime="2016-06-30T00:00:00+05:30" class="post-date">30 Jun 2016</time></small>
+  <small><time datetime="2016-06-30T00:00:00-05:00" class="post-date">30 Jun 2016</time></small>
   <div><p>Hello all!</p> <p>I spent the last few days working on refactoring the old expressions.rb (in ruby runtime environment) into a revamped <code>CT_Expressions</code> module. This solves...</div>
 
   <a href="/2016/06/25/gsoc16/">
     <h3>[GSoC 2016] Progress on External runtime functions </h3> 
   </a>
-  <small><time datetime="2016-06-25T00:00:00+05:30" class="post-date">25 Jun 2016</time></small>
+  <small><time datetime="2016-06-25T00:00:00-05:00" class="post-date">25 Jun 2016</time></small>
   <div><p>After the codebase merge a lot of new tasks and issues turned up. One of the important tasks is adding runtime support for externally defined...</div>
 
   <a href="/2016/06/20/gsoc16/">
     <h3>[GSoC 2016] Merged Github repository with try server codebase </h3> 
   </a>
-  <small><time datetime="2016-06-20T00:00:00+05:30" class="post-date">20 Jun 2016</time></small>
+  <small><time datetime="2016-06-20T00:00:00-05:00" class="post-date">20 Jun 2016</time></small>
   <div><p>Over the last few weeks I have been adding all the development code to the try server codebase for immediate testing and rapid modifications. The...</div>
 
   <a href="/2016/06/15/gsoc16/">
     <h3>[GSoC 2016] Cleanup and progress for mid evaluations </h3> 
   </a>
-  <small><time datetime="2016-06-15T00:00:00+05:30" class="post-date">15 Jun 2016</time></small>
+  <small><time datetime="2016-06-15T00:00:00-05:00" class="post-date">15 Jun 2016</time></small>
   <div><p>This week I’ve been working on tasks to prepare ruby_curry for a version release on Github and the GSoC mid evaluations.</p> <p>I’ve added the module/namespace...</div>
 
   <a href="/2016/06/12/gsoc16/">
     <h3>[GSoC 2016] Progress in RCurry </h3> 
   </a>
-  <small><time datetime="2016-06-12T00:00:00+05:30" class="post-date">12 Jun 2016</time></small>
+  <small><time datetime="2016-06-12T00:00:00-05:00" class="post-date">12 Jun 2016</time></small>
   <div><p>Hello all!</p> <p>Over the last week, I progressed in defining RCurry and correspondingly updated ICurryToAbstractRuby(the module to convert ICurry to RCurry). The current implementation can...</div>
 
   <a href="/2016/06/05/gsoc16/">
     <h3>[GSoC 2016] Introducing RCurry - An abstraction layer </h3> 
   </a>
-  <small><time datetime="2016-06-05T00:00:00+05:30" class="post-date">05 Jun 2016</time></small>
+  <small><time datetime="2016-06-05T00:00:00-05:00" class="post-date">05 Jun 2016</time></small>
   <div><p>Hello all!</p> <p>As discussed in the previous post, we made a drastic change in the architecture of ruby_curry by utilising <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/docs/ICurry.pdf">ICurry</a> to cover the...</div>
 
   <a href="/2016/06/02/gsoc16/">
     <h3>[GSoC 2016] Progress on translator system </h3> 
   </a>
-  <small><time datetime="2016-06-02T00:00:00+05:30" class="post-date">02 Jun 2016</time></small>
+  <small><time datetime="2016-06-02T00:00:00-05:00" class="post-date">02 Jun 2016</time></small>
   <div><p>Over the last few days I have been working on the ICurry to ruby object code translator system. I developed the first version which successfully...</div>
 
   <a href="/2016/05/29/gsoc16/">
     <h3>[GSoC 2016] Translator system for ruby_curry </h3> 
   </a>
-  <small><time datetime="2016-05-29T00:00:00+05:30" class="post-date">29 May 2016</time></small>
+  <small><time datetime="2016-05-29T00:00:00-05:00" class="post-date">29 May 2016</time></small>
   <div><p>I had a discussion with my mentor regarding a translator system which would handle the frontend parsing of Curry source program into an intermediate form...</div>
 
   <a href="/2016/05/26/gsoc16/">
     <h3>[GSoC 2016] Backtrack bug solved </h3> 
   </a>
-  <small><time datetime="2016-05-26T00:00:00+05:30" class="post-date">26 May 2016</time></small>
+  <small><time datetime="2016-05-26T00:00:00-05:00" class="post-date">26 May 2016</time></small>
   <div><p>This post is to update about the current status of work in ruby_curry as part of GSoC 2016.</p> <p>As mentioned in my previous post, I...</div>
 
   <a href="/2016/05/23/gsoc16/">
     <h3>[GSoC 2016] Coding phase - First post </h3> 
   </a>
-  <small><time datetime="2016-05-23T00:00:00+05:30" class="post-date">23 May 2016</time></small>
+  <small><time datetime="2016-05-23T00:00:00-05:00" class="post-date">23 May 2016</time></small>
   <div><p>Hello all!</p> <p>As part of the initial stage of the Coding Phase, I had a discussion with my mentor regarding the immediate set of tasks/features...</div>
 
   <a href="/2016/05/18/gsoc16/">
     <h3>[GSoC 2016] Completion of status report </h3> 
   </a>
-  <small><time datetime="2016-05-18T00:00:00+05:30" class="post-date">18 May 2016</time></small>
+  <small><time datetime="2016-05-18T00:00:00-05:00" class="post-date">18 May 2016</time></small>
   <div><p>I have completed the brief status <a href="https://docs.google.com/document/d/1O6udc8el6X_P1nZt1bk_gMCTw0W4PY-swhsPnx1Fs-o/edit?usp=sharing">report</a> of the current ruby_curry codebase. The report is organised into 3 main sections -</p> <ol> <li> Installation/Usage...</div>
 
   <a href="/2016/05/13/gsoc16/">
     <h3>[GSoC 2016] Codebase status report and installing KiCS2 </h3> 
   </a>
-  <small><time datetime="2016-05-13T00:00:00+05:30" class="post-date">13 May 2016</time></small>
+  <small><time datetime="2016-05-13T00:00:00-05:00" class="post-date">13 May 2016</time></small>
   <div><p>Hello all!</p> <p>This post is to update about my progress in generating a status report for the ruby_curry codebase. I have logically divided the code...</div>
 
   <a href="/2016/05/09/gsoc16/">
     <h3>[GSoC 2016] Installing PAKCS </h3> 
   </a>
-  <small><time datetime="2016-05-09T00:00:00+05:30" class="post-date">09 May 2016</time></small>
+  <small><time datetime="2016-05-09T00:00:00-05:00" class="post-date">09 May 2016</time></small>
   <div><p>I spent the last few days surfing through the current codebase in ruby_curry in order to identify the code workflow for a single run of...</div>
 
   <a href="/2016/05/07/gsoc16/">
     <h3>[GSoC 2016] Community Bonding - First Post </h3> 
   </a>
-  <small><time datetime="2016-05-07T00:00:00+05:30" class="post-date">07 May 2016</time></small>
+  <small><time datetime="2016-05-07T00:00:00-05:00" class="post-date">07 May 2016</time></small>
   <div><p>Hello all!</p> <p>This year as part of Google Summer of Code 2016 I will continue working on <a href="https://github.com/karthiksenthil/ruby_curry">ruby_curry</a>, extending it to a full fledged...</div>
 
   <a href="/2015/08/18/multrix/">
     <h3>Multrix - A tool for dynamic dependence analysis of a program </h3> 
   </a>
-  <small><time datetime="2015-08-18T00:00:00+05:30" class="post-date">18 Aug 2015</time></small>
+  <small><time datetime="2015-08-18T00:00:00-05:00" class="post-date">18 Aug 2015</time></small>
   <div><p><em>A project undertaken in the <a href="http://hpc.nitk.ac.in/">HPC Research Group</a> at National Institute of Technology Karnataka, India</em></p> <p>Multrix is an automatic, dynamic and language-independent tool to...</div>
 
   <a href="/2015/06/24/whats-hpc/">
     <h3>What is HPC? </h3> 
   </a>
-  <small><time datetime="2015-06-24T00:00:00+05:30" class="post-date">24 Jun 2015</time></small>
+  <small><time datetime="2015-06-24T00:00:00-05:00" class="post-date">24 Jun 2015</time></small>
   <div><p>High Performance Computing(HPC) is becoming a trending term in Computer Science. Here is my view or definition of HPC in layman words.</p> <p>As humans we...</div>
 
 
@@ -219,7 +225,7 @@
                         <td align="center"> <a href="http://karthiksenthil.github.io/atom.xml"> Feed </a> </td>
                     </tr>
                 </table>
-                &copy; <time datetime="2016-08-05T22:54:23+05:30">2016</time> Karthik Senthil. Powered by Jekyll. 
+                &copy; <time datetime="2016-08-21T19:54:55-05:00">2016</time> Karthik Senthil. Powered by Jekyll. 
             </small>
             </footer>
         </div>

@@ -10,7 +10,7 @@
 
   <title>
     
-      [GSoC 2016] Support for variables in ruby_curry &middot; Karthik Senthil
+      [GSoC 2016] Signing off from GSoC 2016 ! &middot; Karthik Senthil
     
   </title>
 
@@ -44,13 +44,28 @@
             </header>
             <main>
             <article class="post">
-  <h1 class="post-title">[GSoC 2016] Support for variables in ruby_curry</h1>
-  <time datetime="2016-07-10T00:00:00-05:00" class="post-date">10 Jul 2016</time>
-  <p>Over the last few days I was working on implementing the equation constrained operator (=:&lt;=). After working on the <a href="https://github.com/karthiksenthil/ruby_curry/blob/master/lib/CT_External.rb#L141">first version</a> algorithm for it, we realised that support for variables was an important component specifically needed to test the operator.</p>
+  <h1 class="post-title">[GSoC 2016] Signing off from GSoC 2016 !</h1>
+  <time datetime="2016-08-21T00:00:00-05:00" class="post-date">21 Aug 2016</time>
+  <p>Hello all!</p>
 
-<p>We then worked on adding support for Variables both in compile time(object code generation) and runtime(execution). The concept implemented is also called <code>Narrowing</code>. This support was implemented by means of a generator table which maps a data constructor with token value 4 to an expression. Currently the expressions are bound during compile time, but it is preffered if the same happens freshly during runtime. This will be my next task of focus.</p>
+<p>It has been a very interesting and fruitful journey this GSoC, specifically with the progress made in ruby_curry’s usability and range of programs that can be currently compiled with it.</p>
 
-<p>The support for variables can be found in this <a href="https://github.com/karthiksenthil/ruby_curry/commit/8528a5ca93090a6cb8f8e3f194541fc1d12be099">commit</a>.</p>
+<p>There are still many avenues for improvements like :</p>
+<ul>
+<li> Completing CT_External.rb with all support for External functions </li>
+<li> With introduction of suppport for Variables, many unimplemented edge cases can be implemented</li>
+<li> A fully compiled, distributable binary for ruby_curry</li>
+<li> More documentation regarding the details of ICurry and pipeline followed</li>
+<li> Any interesting feature or extension to improve the performance of the compiler as a whole. Possible direction could be in ICurry translation module. </li>
+</ul>
+
+<p>The current status of the project can be viewed online <a href="https://github.com/karthiksenthil/ruby_curry">here</a>.</p>
+
+<p>I would be more than happy to guide anybody interested in learning or pursuing any part of this work. The ultimate aim of ruby_curry is to act as an ideal research playground which can be used by students and researchers working on functional logic programming paradigms.</p>
+
+<p>As always you can contact me via <a href="https://github.com/karthiksenthil">Github</a> or drop in an <a href="mailto:karthik.senthil94@gmail.com">email</a> about your queries regarding this work. </p>
+
+<p>Looking forward to continue contributing to this prized project and overall to the dearest open source community :)</p>
 
 </article>
 
@@ -58,15 +73,6 @@
 <aside class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/2016/08/21/gsoc16/">
-            [GSoC 2016] Signing off from GSoC 2016 !
-            <small><time datetime="2016-08-21T00:00:00-05:00">21 Aug 2016</time></small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -82,6 +88,15 @@
           <a href="/2016/07/31/gsoc16/">
             [GSoC 2016] Documentation of ruby_curry
             <small><time datetime="2016-07-31T00:00:00-05:00">31 Jul 2016</time></small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2016/07/21/gsoc16/">
+            [GSoC 2016] Documentation and upcoming tasks
+            <small><time datetime="2016-07-21T00:00:00-05:00">21 Jul 2016</time></small>
           </a>
         </h3>
       </li>

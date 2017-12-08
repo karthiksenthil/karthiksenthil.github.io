@@ -3,4 +3,4 @@ layout: page
 title: Coral Growth Simulation
 ---
 
-{% include youtubePlayer.html id="mr2yjILDPdM" %}
+{% include youtube_player.html id="lhKTextOT3k" %}
